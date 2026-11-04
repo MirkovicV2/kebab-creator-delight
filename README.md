@@ -12,6 +12,9 @@ Los cambios en `main` se publican con GitHub Actions. En Settings > Pages,
 la fuente debe ser **GitHub Actions** y el dominio personalizado debe ser
 `bar-dejavu-kebab.es`.
 
+Desde IntelliJ: trabaja en `main`, crea el commit y haz Push a `origin/main`
+en la cuenta `MirkovicV2`. GitHub Actions publica la web automáticamente.
+
 Comprobaciones locales: `npm ci`, `npm run build` y `npm test`.
 
 El dominio se administra en IONOS. El registro CNAME de `www` debe apuntar
