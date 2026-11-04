@@ -1,0 +1,37 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#F6E7B5"/>
+  <rect x="60" y="60" width="1080" height="780" rx="44" fill="url(#bg)" stroke="#15120C" stroke-width="12"/>
+  <circle cx="206" cy="176" r="18" fill="#FFF4D5" fill-opacity="0.9"/>
+  <circle cx="996" cy="214" r="12" fill="#FFF4D5" fill-opacity="0.78"/>
+  <circle cx="926" cy="138" r="8" fill="#FFF4D5" fill-opacity="0.72"/>
+  <circle cx="108" cy="726" r="14" fill="#FFF4D5" fill-opacity="0.74"/>
+  <circle cx="1032" cy="676" r="18" fill="#FFF4D5" fill-opacity="0.84"/>
+  <path d="M214 680C214 632.5 252.5 594 300 594H408C455.5 594 494 632.5 494 680V714C494 761.5 455.5 800 408 800H300C252.5 800 214 761.5 214 714V680Z" fill="#D9482A"/>
+  <rect x="246" y="564" width="216" height="64" rx="24" fill="#E85C34"/>
+  <rect x="286" y="528" width="136" height="44" rx="18" fill="#F6F0E4" stroke="#15120C" stroke-width="10"/>
+  <path d="M318 642H390" stroke="#FFE9B0" stroke-width="22" stroke-linecap="round"/>
+  <path d="M318 694H390" stroke="#FFE9B0" stroke-width="22" stroke-linecap="round"/>
+  <path d="M318 746H390" stroke="#FFE9B0" stroke-width="22" stroke-linecap="round"/>
+  <path d="M564 370C564 327.667 598.333 293.333 640.667 293.333H730.333C772.667 293.333 807 327.667 807 370V710C807 752.333 772.667 786.667 730.333 786.667H640.667C598.333 786.667 564 752.333 564 710V370Z" fill="#F7F3EA" stroke="#15120C" stroke-width="12"/>
+  <rect x="592" y="244" width="188" height="76" rx="28" fill="#F7F3EA" stroke="#15120C" stroke-width="12"/>
+  <path d="M632 220C632 197.909 649.909 180 672 180V180C694.091 180 712 197.909 712 220V244H632V220Z" fill="#15120C"/>
+  <rect x="604" y="404" width="164" height="228" rx="24" fill="#7FC8F8"/>
+  <path d="M636 438C650.667 423.333 680.6 396.8 703 396C725.4 395.2 741.667 421.667 747 435V518C736.167 531.833 709.6 557.4 690 559C670.4 560.6 648.5 542 640 532C634.333 523 623 500.6 623 472C623 443.4 631.667 425.333 636 438Z" fill="#EAF8FF" fill-opacity="0.74"/>
+  <circle cx="662" cy="666" r="20" fill="#15120C"/>
+  <path d="M898 504C898 448.772 942.772 404 998 404H1010C1065.23 404 1110 448.772 1110 504V694C1110 749.228 1065.23 794 1010 794H998C942.772 794 898 749.228 898 694V504Z" fill="#101A22"/>
+  <path d="M942 364C942 342.909 959.909 325 982 325H1026C1048.09 325 1066 342.909 1066 364V418H942V364Z" fill="#101A22"/>
+  <rect x="928" y="452" width="152" height="110" rx="20" fill="#1FB5A9"/>
+  <path d="M960 488H1048" stroke="#D9FFF4" stroke-width="20" stroke-linecap="round"/>
+  <path d="M960 530H1020" stroke="#D9FFF4" stroke-width="20" stroke-linecap="round"/>
+  <path d="M128 132C128 100.072 153.072 75 185 75H529C560.928 75 586 100.072 586 132V246C586 277.928 560.928 303 529 303H185C153.072 303 128 277.928 128 246V132Z" fill="#15120C" fill-opacity="0.82"/>
+  <text x="157" y="163" fill="#F7E8BA" font-family="Arial, sans-serif" font-size="42" font-weight="700" letter-spacing="2">BEBIDAS</text>
+  <text x="157" y="214" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="76" font-weight="700">Refrescos</text>
+  <text x="157" y="275" fill="#F3F0E6" font-family="Arial, sans-serif" font-size="34">Agua, cerveza, cafe y opciones frias</text>
+  <defs>
+    <linearGradient id="bg" x1="128" y1="82" x2="1055" y2="820" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2C66D"/>
+      <stop offset="0.55" stop-color="#E9964A"/>
+      <stop offset="1" stop-color="#D65A3A"/>
+    </linearGradient>
+  </defs>
+</svg>

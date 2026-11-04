@@ -1,0 +1,14 @@
+Options -MultiViews
+RewriteEngine On
+RewriteBase /
+
+# Keep legacy QR links pointing at /carta.pdf working without a physical PDF file.
+RewriteRule ^carta\.pdf$ carta [R=302,L]
+
+# Serve real files and directories directly.
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Send application routes back to the SPA entry point.
+RewriteRule ^ index.html [L]

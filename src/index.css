@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;500;600;700&family=Bebas+Neue&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 166 25% 95%;
+    --foreground: 205 37% 14%;
+
+    --card: 170 23% 98%;
+    --card-foreground: 205 37% 14%;
+
+    --popover: 170 23% 98%;
+    --popover-foreground: 205 37% 14%;
+
+    --primary: 205 46% 17%;
+    --primary-foreground: 166 25% 95%;
+
+    --secondary: 166 24% 67%;
+    --secondary-foreground: 205 37% 14%;
+
+    --muted: 167 22% 89%;
+    --muted-foreground: 205 14% 31%;
+
+    --accent: 166 24% 67%;
+    --accent-foreground: 205 37% 14%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 194 16% 81%;
+    --input: 194 16% 81%;
+    --ring: 166 24% 67%;
+
+    --radius: 0rem;
+
+    --gold: 166 24% 67%;
+    --gold-foreground: 205 37% 14%;
+    --cream: 166 25% 95%;
+    --warm-dark: 205 37% 14%;
+
+    --font-display: "Bebas Neue", Impact, sans-serif;
+    --font-body: "Archivo Narrow", "Arial Narrow", sans-serif;
+
+    --sidebar-background: 170 23% 98%;
+    --sidebar-foreground: 205 37% 14%;
+    --sidebar-primary: 205 46% 17%;
+    --sidebar-primary-foreground: 166 25% 95%;
+    --sidebar-accent: 166 24% 67%;
+    --sidebar-accent-foreground: 205 37% 14%;
+    --sidebar-border: 194 16% 81%;
+    --sidebar-ring: 166 24% 67%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    background:
+      radial-gradient(circle at top left, hsla(166, 24%, 67%, 0.2), transparent 32%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0)),
+      hsl(var(--background));
+    font-family: var(--font-body);
+    min-height: 100vh;
+  }
+
+  #root {
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+
+  ::selection {
+    background: hsla(166, 24%, 47%, 0.22);
+    color: hsl(var(--foreground));
+  }
+}
+
+@layer components {
+  .surface-panel {
+    @apply border border-black/10 bg-card;
+  }
+}
+
+@layer utilities {
+  .text-gold {
+    color: hsl(var(--gold));
+  }
+
+  .bg-gold {
+    background-color: hsl(var(--gold));
+  }
+
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-body {
+    font-family: var(--font-body);
+  }
+
+  .brand-wordmark {
+    font-family: var(--font-display);
+    font-weight: 400;
+    letter-spacing: 0.035em;
+    line-height: 0.82;
+    text-transform: uppercase;
+  }
+
+  .checker-divider {
+    height: 12px;
+    background-image:
+      linear-gradient(45deg, rgba(10, 10, 10, 1) 25%, transparent 25%),
+      linear-gradient(-45deg, rgba(10, 10, 10, 1) 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, rgba(10, 10, 10, 1) 75%),
+      linear-gradient(-45deg, transparent 75%, rgba(10, 10, 10, 1) 75%);
+    background-position: 0 0, 0 6px, 6px -6px, -6px 0;
+    background-size: 12px 12px;
+  }
+
+  .editorial-kicker {
+    @apply text-[11px] font-semibold uppercase tracking-[0.28em];
+  }
+
+  .section-label {
+    @apply inline-flex items-center border border-black/10 bg-white px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.28em] text-primary;
+  }
+
+  .gradient-overlay {
+    background: linear-gradient(180deg, rgba(12, 11, 10, 0.04) 0%, rgba(12, 11, 10, 0.72) 100%);
+  }
+
+  .gradient-gold {
+    background: linear-gradient(135deg, hsl(166, 26%, 74%) 0%, hsl(176, 23%, 57%) 100%);
+  }
+
+  .gradient-brand {
+    background: linear-gradient(150deg, hsl(var(--primary)) 0%, hsl(202, 45%, 24%) 58%, hsl(var(--gold)) 160%);
+  }
+
+  .compact-lines-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .summary-reset {
+    list-style: none;
+    cursor: pointer;
+  }
+
+  .summary-reset::-webkit-details-marker {
+    display: none;
+  }
+
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
