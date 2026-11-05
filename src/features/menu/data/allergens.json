@@ -1,0 +1,59 @@
+{
+  "definitions": [
+    {
+      "id": "gluten",
+      "name": "Gluten",
+      "shortName": "Gluten",
+      "description": "Panes, masas, empanados y bolleria."
+    },
+    {
+      "id": "milk",
+      "name": "Leche",
+      "shortName": "Lacteos",
+      "description": "Quesos, salsas de yogur y elaboraciones con leche."
+    },
+    {
+      "id": "egg",
+      "name": "Huevo",
+      "shortName": "Huevo",
+      "description": "Salsas emulsiones, masas y rebozados."
+    },
+    {
+      "id": "fish",
+      "name": "Pescado",
+      "shortName": "Pescado",
+      "description": "Atun, ventresca, anchoa y salsas que los incorporan."
+    },
+    {
+      "id": "sesame",
+      "name": "Sesamo",
+      "shortName": "Sesamo",
+      "description": "Tahini, panes con semillas y toppings."
+    },
+    {
+      "id": "soy",
+      "name": "Soja",
+      "shortName": "Soja",
+      "description": "Marinados, glaseados y algunas salsas de cocina."
+    },
+    {
+      "id": "nuts",
+      "name": "Frutos secos",
+      "shortName": "Frutos secos",
+      "description": "Principalmente pistacho en postres."
+    },
+    {
+      "id": "celery",
+      "name": "Apio",
+      "shortName": "Apio",
+      "description": "Mezclas de especias, caldos y marinados."
+    },
+    {
+      "id": "mustard",
+      "name": "Mostaza",
+      "shortName": "Mostaza",
+      "description": "Vinagretas, salsas y aderezos."
+    }
+  ],
+  "disclaimer": "Informacion orientativa segun la receta base mostrada. Extras, salsas o elecciones del pedido pueden cambiar los alergenos, asi que confirma con el local si tienes una alergia grave."
+}

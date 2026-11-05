@@ -2,6 +2,59 @@
 
 Web hecha con Vite + React.
 
+## Datos y base de datos
+
+La carta utiliza [LokiJS](https://github.com/techfort/LokiJS), una base NoSQL
+documental embebida que se ejecuta en memoria dentro del navegador. No requiere
+instalar ni mantener un servidor de base de datos y funciona en hosting estático.
+
+- `src/features/menu/data/catalog.json`: categorías, productos y opciones compartidas.
+- `src/features/menu/data/restaurant.json`: contacto, horarios y enlaces del local.
+- `src/features/menu/data/allergens.json`: definiciones de alérgenos.
+- `src/features/menu/data/database.ts`: carga los documentos y consulta productos
+  por ID, categoría o destacados, conservando el orden de la carta.
+- `src/features/menu/data/images.ts`: rutas de las fotografías WebP.
+
+Para actualizar la carta, edita los documentos JSON y vuelve a generar/publicar
+la web. Los precios son números en euros; las opciones indican suplementos
+respecto al precio base. `modifierGroups` reutiliza los grupos definidos en
+`modifiers`, y `imageKey: null` conserva los productos sin foto. Una descripción
+larga omitida usa la descripción normal; las etiquetas, alérgenos y opciones
+omitidos se interpretan como listas vacías.
+
+Los JSON versionados son el almacenamiento permanente de la carta. En cada
+visita se crea la base en memoria con los datos publicados, sin cachés locales
+de precios que puedan quedarse desactualizados. Las fotografías se encuentran
+en `public/images/`, optimizadas en WebP hasta 1600 píxeles.
+
+## Desarrollo y comprobaciones
+
+```bash
+npm ci --omit=peer
+npm run dev
+```
+
+Los paquetes peer necesarios ya están declarados en `package.json`. La opción
+`--omit=peer` evita instalar herramientas opcionales que no usa el proyecto.
+Para limpiar una instalación anterior: `npm prune --omit=peer`.
+
+```bash
+npm run typecheck
+npm run lint
+npm test
+npm run build
+npm run test:e2e
+```
+
+Las pruebas unitarias verifican la carta, precios, alérgenos y referencias. Las
+pruebas de navegador comprueban inicio, contacto, las nueve categorías, fotos,
+enlaces de productos y redirecciones en escritorio y móvil. Para preparar
+Chromium la primera vez: `npx playwright install chromium`.
+
+Las pruebas de navegador compilan y guardan sus diagnósticos en la carpeta
+temporal del sistema, fuera del proyecto. `dist/` se genera con `npm run build`
+cuando necesitas preparar los archivos para publicarlos.
+
 ## GitHub Pages
 
 - Cuenta: `MirkovicV2`

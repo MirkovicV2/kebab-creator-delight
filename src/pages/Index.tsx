@@ -1,18 +1,19 @@
 import { ArrowRight, MapPin, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 
-import adanaImage from "@/assets/adana.jpg";
 import Footer from "@/features/layout/components/Footer";
-import { getInstagramHandle, InstagramFeedEmbed } from "@/features/marketing/components/InstagramFeedSection";
+import { InstagramFeedEmbed } from "@/features/marketing/components/InstagramFeedEmbed";
+import { getInstagramHandle } from "@/features/marketing/lib/instagram";
 import VenueGallery from "@/features/marketing/components/VenueGallery";
 import Navbar from "@/features/layout/components/Navbar";
 import { Badge } from "@/shared/ui/badge";
 import { Button } from "@/shared/ui/button";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/shared/ui/carousel";
-import { menuProducts, restaurantInfo } from "@/features/menu/data";
+import { menuDatabase, restaurantInfo } from "@/features/menu/data";
 import { formatProductPrice } from "@/features/menu/lib/menu";
 
-const topSellingProducts = menuProducts.filter((product) => product.bestseller).slice(0, 7);
+const adanaImage = `${import.meta.env.BASE_URL}images/adana.webp`;
+const topSellingProducts = menuDatabase.getBestsellers();
 
 const housePrinciples = [
   "Kebabs y platos al momento",

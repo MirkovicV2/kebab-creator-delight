@@ -1,0 +1,2058 @@
+{
+  "categories": [
+    {
+      "id": "salads",
+      "name": "Ensaladas",
+      "shortName": "Ensaladas",
+      "description": "Ensaladas completas con pollo, ventresca, queso y alinos clasicos.",
+      "note": "Frescas",
+      "tone": "olive",
+      "products": [
+        {
+          "id": "salads-ensalada-cesar",
+          "name": "Ensalada Cesar",
+          "description": "Lechuga, pollo, maiz, queso rallado, tomate, picatostes y salsa cesar.",
+          "price": 12.9,
+          "imageKey": "salad-cesar",
+          "tags": ["Fresco"],
+          "allergens": [
+            {
+              "id": "gluten",
+              "level": "contains"
+            },
+            {
+              "id": "milk",
+              "level": "contains"
+            },
+            {
+              "id": "egg",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "8 min",
+          "highlight": "Lechuga, pollo, Maiz, Queso rallado y Tomate"
+        },
+        {
+          "id": "salads-ensalada-rulo-de-cabra",
+          "name": "Ensalada Rulo de Cabra",
+          "description": "Lechuga, tomate, rulo de cabra, bacon crujiente, cebolla frita y crema de modena.",
+          "price": 12.9,
+          "imageKey": "salad-rulo",
+          "tags": ["Fresco"],
+          "allergens": [
+            {
+              "id": "gluten",
+              "level": "contains"
+            },
+            {
+              "id": "milk",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "8 min",
+          "highlight": "Lechuga, Tomate, Rulo de cabra y Bacon"
+        },
+        {
+          "id": "salads-ensalada-ventresca",
+          "name": "Ensalada Ventresca",
+          "description": "Ventresca de atun, lechuga, pimientos asados y tomate.",
+          "price": 12.9,
+          "imageKey": "salad-ventresca",
+          "tags": ["Fresco"],
+          "allergens": [
+            {
+              "id": "fish",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "8 min",
+          "highlight": "Ventresca de atun, Lechuga y pimientos asados"
+        },
+        {
+          "id": "salads-ensalada-de-pollo-crujiente",
+          "name": "Ensalada de Pollo Crujiente",
+          "description": "Lechuga, tomate, maiz, pollo crujiente, mix de quesos, cebolla frita y crema de modena.",
+          "price": 12.9,
+          "imageKey": "salad-crispy-chicken",
+          "tags": ["Fresco"],
+          "allergens": [
+            {
+              "id": "gluten",
+              "level": "contains"
+            },
+            {
+              "id": "milk",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "8 min",
+          "highlight": "Lechuga, Tomate, Maiz, Pollo crujiente y Queso"
+        }
+      ]
+    },
+    {
+      "id": "turkish-specialties",
+      "name": "Las Turcas",
+      "shortName": "Turcas",
+      "description": "Kebabs, shawarmas y platos turcos con pollo, ternera, mixto o falafel.",
+      "note": "Kebab, shawarma y platos",
+      "tone": "gold",
+      "products": [
+        {
+          "id": "turkish-specialties-kebab",
+          "name": "Kebab",
+          "description": "Pollo 7,00 €, mixto 7,50 €, ternera 8,50 € y falafel 6,00 €. Con ensalada de repollo, tomate y cebolla, y salsas. Pan artesano con masa madre y sin conservantes.",
+          "longDescription": "Kebab con ensalada de repollo, tomate y cebolla, y salsas. Precio segun version: pollo 7,00 €, mixto 7,50 €, ternera 8,50 € y falafel 6,00 €. El pan es artesano, con masa madre y sin conservantes.",
+          "price": 7,
+          "imageKey": "kebab",
+          "featured": true,
+          "bestseller": true,
+          "tags": ["Pan artesano","Kebab turco","Destacado","Muy pedido"],
+          "allergens": [
+            {
+              "id": "gluten",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "12 min",
+          "highlight": "Precio segun version",
+          "modifierGroups": ["kebab-protein","sauces","legacy-turkish-extras"],
+          "priceLabel": "Pollo 7,00 / Mixto 7,50 / Ternera 8,50 / Falafel 6,00"
+        },
+        {
+          "id": "turkish-specialties-kebab-falafel",
+          "name": "Kebab de falafel",
+          "description": "Falafel con ensalada de repollo, tomate y cebolla, y salsas. Pan artesano con masa madre y sin conservantes.",
+          "longDescription": "Kebab de falafel con ensalada de repollo, tomate y cebolla, y salsas. Se mantiene como opcion vegetariana separada. El pan es artesano, con masa madre y sin conservantes.",
+          "price": 6,
+          "imageKey": "kebab",
+          "vegetarian": true,
+          "tags": ["Pan artesano","Kebab turco","Vegetariano"],
+          "allergens": [
+            {
+              "id": "gluten",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "12 min",
+          "highlight": "Falafel, verdura y salsas",
+          "modifierGroups": ["sauces","legacy-turkish-extras"]
+        },
+        {
+          "id": "turkish-specialties-shawarma",
+          "name": "Shawarma",
+          "description": "Pollo 7,00 €, mixto 7,50 €, ternera 8,50 € y falafel 7,00 €. Con ensalada de repollo, tomate y cebolla, y salsas.",
+          "longDescription": "Shawarma con ensalada de repollo, tomate y cebolla, y salsas. Precio segun version: pollo 7,00 €, mixto 7,50 €, ternera 8,50 € y falafel 7,00 €.",
+          "price": 7,
+          "imageKey": "shawarma",
+          "tags": ["Kebab turco","Elige version"],
+          "allergens": [
+            {
+              "id": "gluten",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "12 min",
+          "highlight": "Precio segun version",
+          "modifierGroups": ["shawarma-protein","sauces","legacy-turkish-extras"],
+          "priceLabel": "Pollo 7,00 / Mixto 7,50 / Ternera 8,50 / Falafel 7,00"
+        },
+        {
+          "id": "turkish-specialties-shawarma-falafel",
+          "name": "Shawarma de falafel",
+          "description": "Falafel con ensalada de repollo, tomate y cebolla, y salsas.",
+          "longDescription": "Shawarma de falafel con ensalada de repollo, tomate y cebolla, y salsas. Opcion vegetariana separada del resto.",
+          "price": 7,
+          "imageKey": "shawarma",
+          "vegetarian": true,
+          "tags": ["Kebab turco","Vegetariano"],
+          "allergens": [
+            {
+              "id": "gluten",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "12 min",
+          "highlight": "Falafel, verdura y salsas",
+          "modifierGroups": ["sauces","legacy-turkish-extras"]
+        },
+        {
+          "id": "turkish-specialties-racion-de-patatas-fritas",
+          "name": "Racion de patatas fritas",
+          "description": "Racion de patatas fritas.",
+          "price": 5,
+          "imageKey": "patatas-bravas",
+          "tags": ["Kebab turco"],
+          "allergens": [
+            {
+              "id": "gluten",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "12 min",
+          "highlight": "Racion de patatas fritas"
+        },
+        {
+          "id": "turkish-specialties-media-racion-de-patatas-fritas",
+          "name": "Media racion de patatas fritas",
+          "description": "Media racion de patatas fritas.",
+          "price": 2.5,
+          "imageKey": "patatas-bravas",
+          "tags": ["Media racion","Kebab turco"],
+          "allergens": [
+            {
+              "id": "gluten",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "12 min",
+          "highlight": "Media racion de patatas fritas"
+        },
+        {
+          "id": "plates-combi-simple",
+          "name": "Combi simple",
+          "description": "Pollo 9,50 €, mixto 10,00 €, ternera 11,50 € y falafel 8,20 €. Con arroz, patatas o ensalada.",
+          "longDescription": "Plato combi simple con guarnicion a elegir. Precio segun version: pollo 9,50 €, mixto 10,00 €, ternera 11,50 € y falafel 8,20 €.",
+          "price": 9.5,
+          "imageKey": "combi",
+          "tags": ["Plato completo","Elige version"],
+          "prepTime": "14 min",
+          "highlight": "Precio segun version",
+          "modifierGroups": ["combi-simple-protein","side","sauces","legacy-plate-extras"],
+          "priceLabel": "Pollo 9,50 / Mixto 10,00 / Ternera 11,50 / Falafel 8,20"
+        },
+        {
+          "id": "plates-combi-simple-falafel",
+          "name": "Combi simple de falafel",
+          "description": "Falafel con arroz, patatas o ensalada.",
+          "longDescription": "Plato combi simple de falafel con guarnicion a elegir y extras del local.",
+          "price": 8.2,
+          "imageKey": "falafel",
+          "vegetarian": true,
+          "tags": ["Plato completo","Vegetariano"],
+          "prepTime": "14 min",
+          "highlight": "Falafel y guarnicion",
+          "modifierGroups": ["side","sauces","legacy-plate-extras"]
+        },
+        {
+          "id": "plates-combi-doble",
+          "name": "Combi doble",
+          "description": "Pollo 11,50 €, mixto 12,00 €, ternera 13,50 € y falafel 11,50 €. Con arroz, patatas o ensalada.",
+          "longDescription": "Plato combi doble con guarnicion a elegir. Precio segun version: pollo 11,50 €, mixto 12,00 €, ternera 13,50 € y falafel 11,50 €.",
+          "price": 11.5,
+          "imageKey": "combi",
+          "tags": ["Plato completo","Elige version"],
+          "prepTime": "14 min",
+          "highlight": "Precio segun version",
+          "modifierGroups": ["combi-double-protein","side","sauces","legacy-plate-extras"],
+          "priceLabel": "Pollo 11,50 / Mixto 12,00 / Ternera 13,50 / Falafel 11,50"
+        },
+        {
+          "id": "plates-combi-doble-falafel",
+          "name": "Combi doble de falafel",
+          "description": "Doble de falafel con arroz, patatas o ensalada.",
+          "longDescription": "Version doble del combi de falafel con guarnicion a elegir y extras del local.",
+          "price": 11.5,
+          "imageKey": "falafel",
+          "vegetarian": true,
+          "tags": ["Plato completo","Vegetariano"],
+          "prepTime": "14 min",
+          "highlight": "Doble de falafel",
+          "modifierGroups": ["side","sauces","legacy-plate-extras"]
+        },
+        {
+          "id": "plates-plato-deja-vu",
+          "name": "Plato Deja Vu",
+          "description": "Pollo 13,00 €, mixto 14,00 €, ternera 15,50 € y falafel 11,50 €. Patatas o arroz, repollo, tomate, cebolla y salsas.",
+          "longDescription": "Plato Deja Vu con patatas o arroz, repollo, tomate, cebolla y salsas. Precio segun version: pollo 13,00 €, mixto 14,00 €, ternera 15,50 € y falafel 11,50 €.",
+          "price": 13,
+          "imageKey": "plate-deja-vu",
+          "featured": true,
+          "bestseller": true,
+          "tags": ["Plato completo","Elige version"],
+          "prepTime": "14 min",
+          "highlight": "Precio segun version",
+          "modifierGroups": ["dejavu-protein","side","sauces","legacy-plate-extras"],
+          "priceLabel": "Pollo 13,00 / Mixto 14,00 / Ternera 15,50 / Falafel 11,50"
+        },
+        {
+          "id": "plates-plato-deja-vu-falafel",
+          "name": "Plato Deja Vu de falafel",
+          "description": "Falafel con patatas o arroz, repollo, tomate, cebolla y salsas.",
+          "longDescription": "Version vegetariana del Plato Deja Vu con falafel, guarnicion a elegir y extras del local.",
+          "price": 11.5,
+          "imageKey": null,
+          "vegetarian": true,
+          "tags": ["Plato completo","Vegetariano"],
+          "prepTime": "14 min",
+          "highlight": "Falafel y guarnicion",
+          "modifierGroups": ["side","sauces","legacy-plate-extras"]
+        }
+      ]
+    },
+    {
+      "id": "rations",
+      "name": "Raciones",
+      "shortName": "Raciones",
+      "description": "Patatas, alitas, croquetas, fingers y otras raciones del bar.",
+      "note": "Para compartir",
+      "tone": "sand",
+      "products": [
+        {
+          "id": "rations-patatas-mixtas-bravas-o-alioli",
+          "name": "Patatas mixtas, bravas o alioli",
+          "description": "Racion de patatas mixtas, bravas o alioli.",
+          "price": 8.9,
+          "imageKey": "patatas-bravas",
+          "tags": ["Para compartir"],
+          "allergens": [
+            {
+              "id": "egg",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "11 min",
+          "highlight": "Racion de patatas mixtas, bravas o alioli",
+          "modifierGroups": ["sauces"]
+        },
+        {
+          "id": "rations-racion-de-patatas-fritas",
+          "name": "Racion de patatas fritas",
+          "description": "Racion de patatas fritas.",
+          "price": 5,
+          "imageKey": "patatas-bravas",
+          "tags": ["Para compartir"],
+          "prepTime": "11 min",
+          "highlight": "Racion de patatas fritas"
+        },
+        {
+          "id": "rations-media-racion-de-patatas-fritas",
+          "name": "Media racion de patatas fritas",
+          "description": "Media racion de patatas fritas.",
+          "price": 2.5,
+          "imageKey": "patatas-bravas",
+          "tags": ["Media racion","Para compartir"],
+          "prepTime": "11 min",
+          "highlight": "Media racion de patatas fritas"
+        },
+        {
+          "id": "rations-salchipapas",
+          "name": "Salchipapas",
+          "description": "Salchipapas para compartir en mesa o pedir para llevar.",
+          "price": 10.5,
+          "imageKey": "salchipapas",
+          "bestseller": true,
+          "tags": ["Para compartir","Muy pedido"],
+          "prepTime": "11 min",
+          "highlight": "Salchipapas para compartir",
+          "modifierGroups": ["sauces"]
+        },
+        {
+          "id": "rations-papas-locas",
+          "name": "Papas Locas",
+          "description": "Patatas fritas con filetes de pollo, bacon, mezcla de queso rallado, salsa cheddar y ketchup.",
+          "price": 16.5,
+          "imageKey": "patatas-locas",
+          "bestseller": true,
+          "tags": ["Para compartir","Muy pedido"],
+          "allergens": [
+            {
+              "id": "milk",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "11 min",
+          "highlight": "Patatas fritas, Bacon y mezcla de queso",
+          "modifierGroups": ["sauces"]
+        },
+        {
+          "id": "rations-alitas-de-pollo",
+          "name": "Alitas de Pollo",
+          "description": "Alitas de Pollo para compartir en mesa o pedir para llevar.",
+          "price": 11.9,
+          "imageKey": "wings",
+          "tags": ["Para compartir"],
+          "prepTime": "11 min",
+          "highlight": "Alitas de Pollo"
+        },
+        {
+          "id": "rations-nuggets",
+          "name": "Nuggets",
+          "description": "Nuggets para compartir en mesa o pedir para llevar.",
+          "price": 9.9,
+          "imageKey": "nuggets",
+          "bestseller": true,
+          "tags": ["Para compartir","Muy pedido"],
+          "allergens": [
+            {
+              "id": "gluten",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "11 min",
+          "highlight": "Nuggets para compartir"
+        },
+        {
+          "id": "rations-nuggets-1-2-racion",
+          "name": "Nuggets 1/2 racion",
+          "description": "Nuggets 1/2 racion para compartir en mesa o pedir para llevar.",
+          "price": 5.5,
+          "imageKey": "nuggets",
+          "tags": ["Para compartir","Media racion"],
+          "allergens": [
+            {
+              "id": "gluten",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "11 min",
+          "highlight": "Nuggets 1/2 racion"
+        },
+        {
+          "id": "rations-croquetas-de-jamon",
+          "name": "Croquetas de Jamon",
+          "description": "Croquetas de Jamon para compartir en mesa o pedir para llevar.",
+          "price": 12,
+          "imageKey": "croquetas",
+          "tags": ["Para compartir"],
+          "allergens": [
+            {
+              "id": "gluten",
+              "level": "contains"
+            },
+            {
+              "id": "milk",
+              "level": "contains"
+            },
+            {
+              "id": "egg",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "11 min",
+          "highlight": "Croquetas de Jamon"
+        },
+        {
+          "id": "rations-croquetas-de-jamon-1-2-racion",
+          "name": "Croquetas de Jamon 1/2 racion",
+          "description": "Croquetas de Jamon 1/2 racion para compartir en mesa o pedir para llevar.",
+          "price": 7,
+          "imageKey": "croquetas",
+          "tags": ["Para compartir","Media racion"],
+          "allergens": [
+            {
+              "id": "gluten",
+              "level": "contains"
+            },
+            {
+              "id": "milk",
+              "level": "contains"
+            },
+            {
+              "id": "egg",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "11 min",
+          "highlight": "Croquetas de Jamon"
+        },
+        {
+          "id": "rations-fingers",
+          "name": "Fingers",
+          "description": "Pollo o queso",
+          "price": 11.7,
+          "imageKey": "fingers",
+          "bestseller": true,
+          "tags": ["Para compartir","Muy pedido"],
+          "allergens": [
+            {
+              "id": "gluten",
+              "level": "contains"
+            },
+            {
+              "id": "milk",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "11 min",
+          "highlight": "Pollo o queso"
+        },
+        {
+          "id": "rations-fingers-1-2-racion",
+          "name": "Fingers 1/2 racion",
+          "description": "Pollo o queso",
+          "price": 6.5,
+          "imageKey": "fingers",
+          "tags": ["Para compartir","Media racion"],
+          "allergens": [
+            {
+              "id": "gluten",
+              "level": "contains"
+            },
+            {
+              "id": "milk",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "11 min",
+          "highlight": "Pollo o queso"
+        },
+        {
+          "id": "rations-huevos-rotos",
+          "name": "Huevos Rotos",
+          "description": "Jamon o bacon",
+          "price": 15.5,
+          "imageKey": "huevos-rotos",
+          "tags": ["Para compartir"],
+          "allergens": [
+            {
+              "id": "egg",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "11 min",
+          "highlight": "Jamon o bacon",
+          "modifierGroups": ["sauces"]
+        },
+        {
+          "id": "rations-huevos-rotos-1-2-racion",
+          "name": "Huevos Rotos 1/2 racion",
+          "description": "Jamon o bacon",
+          "price": 9,
+          "imageKey": "huevos-rotos",
+          "tags": ["Para compartir","Media racion"],
+          "allergens": [
+            {
+              "id": "egg",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "11 min",
+          "highlight": "Jamon o bacon",
+          "modifierGroups": ["sauces"]
+        },
+        {
+          "id": "rations-oreja-a-la-plancha",
+          "name": "Oreja a la Plancha",
+          "description": "Oreja a la Plancha para compartir en mesa o pedir para llevar.",
+          "price": 12.9,
+          "imageKey": "oreja",
+          "bestseller": true,
+          "tags": ["Para compartir","Muy pedido"],
+          "prepTime": "11 min",
+          "highlight": "Oreja a la"
+        }
+      ]
+    },
+    {
+      "id": "hamburgers",
+      "name": "Hamburguesas",
+      "shortName": "Burgers",
+      "description": "Hamburguesas con patatas fritas, en formato clasico o mas cargado.",
+      "note": "Con patatas",
+      "tone": "copper",
+      "products": [
+        {
+          "id": "hamburgers-simple",
+          "name": "Simple",
+          "description": "Carne y queso. Ternera o pollo crunchy. Pan artesano con masa madre y sin conservantes.",
+          "longDescription": "Carne y queso. Todas nuestras hamburguesas pueden ser de ternera o pollo crunchy y van acompanadas de patatas fritas. Disponible en ternera o pollo crunchy con el mismo precio base. El pan es artesano, con masa madre y sin conservantes.",
+          "price": 10,
+          "imageKey": "burger-simple",
+          "tags": ["Pan artesano","Con patatas","Elige carne"],
+          "allergens": [
+            {
+              "id": "gluten",
+              "level": "contains"
+            },
+            {
+              "id": "milk",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "14 min",
+          "highlight": "Carne y queso",
+          "modifierGroups": ["burger-protein-choice","legacy-burger-extras"]
+        },
+        {
+          "id": "hamburgers-deja-vu-simple",
+          "name": "Deja Vu Simple",
+          "description": "Carne, queso, lechuga, tomate, cebolla y bacon. Ternera o pollo crunchy. Pan artesano con masa madre y sin conservantes.",
+          "longDescription": "Carne, queso, lechuga, tomate, cebolla y bacon. Todas nuestras hamburguesas pueden ser de ternera o pollo crunchy y van acompanadas de patatas fritas. Disponible en ternera o pollo crunchy con el mismo precio base. El pan es artesano, con masa madre y sin conservantes.",
+          "price": 12.5,
+          "imageKey": "burger-deja-vu-simple",
+          "tags": ["Pan artesano","Con patatas","Elige carne"],
+          "allergens": [
+            {
+              "id": "gluten",
+              "level": "contains"
+            },
+            {
+              "id": "milk",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "14 min",
+          "highlight": "Carne, queso, lechuga, tomate, cebolla y bacon",
+          "modifierGroups": ["burger-protein-choice","legacy-burger-extras"]
+        },
+        {
+          "id": "hamburgers-rulo-de-cabra",
+          "name": "Rulo de Cabra",
+          "description": "Carne, queso de cabra, bacon y cebolla frita. Ternera o pollo crunchy. Pan artesano con masa madre y sin conservantes.",
+          "longDescription": "Carne, queso de cabra, bacon y cebolla frita. Todas nuestras hamburguesas pueden ser de ternera o pollo crunchy y van acompanadas de patatas fritas. Disponible en ternera o pollo crunchy con el mismo precio base. El pan es artesano, con masa madre y sin conservantes.",
+          "price": 12.5,
+          "imageKey": "burger-rulo",
+          "tags": ["Pan artesano","Con patatas","Elige carne"],
+          "allergens": [
+            {
+              "id": "gluten",
+              "level": "contains"
+            },
+            {
+              "id": "milk",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "14 min",
+          "highlight": "Carne, queso de cabra, bacon y cebolla frita",
+          "modifierGroups": ["burger-protein-choice","legacy-burger-extras"]
+        },
+        {
+          "id": "hamburgers-deja-vu",
+          "name": "Deja Vu",
+          "description": "Carne, queso, bacon, huevo, lechuga, tomate y cebolla. Ternera o pollo crunchy. Pan artesano con masa madre y sin conservantes.",
+          "longDescription": "Carne, queso, bacon, huevo, lechuga, tomate y cebolla. Todas nuestras hamburguesas pueden ser de ternera o pollo crunchy y van acompanadas de patatas fritas. Disponible en ternera o pollo crunchy con el mismo precio base. El pan es artesano, con masa madre y sin conservantes.",
+          "price": 12.9,
+          "imageKey": "burger-deja-vu-simple",
+          "featured": true,
+          "bestseller": true,
+          "tags": ["Pan artesano","Con patatas","Destacado","Muy pedido"],
+          "allergens": [
+            {
+              "id": "gluten",
+              "level": "contains"
+            },
+            {
+              "id": "milk",
+              "level": "contains"
+            },
+            {
+              "id": "egg",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "14 min",
+          "highlight": "Carne, Queso, Bacon, Huevo, Lechuga y Tomate",
+          "modifierGroups": ["burger-protein-choice","legacy-burger-extras"]
+        },
+        {
+          "id": "hamburgers-deja-vu-deluxe",
+          "name": "Deja Vu Deluxe",
+          "description": "Carne, queso, bacon, huevo, cebolla caramelizada y pepinillos (sin verduras). Ternera o pollo crunchy. Pan artesano con masa madre y sin conservantes.",
+          "longDescription": "Carne, queso, bacon, huevo, cebolla caramelizada y pepinillos (sin verduras). Todas nuestras hamburguesas pueden ser de ternera o pollo crunchy y van acompanadas de patatas fritas. Disponible en ternera o pollo crunchy con el mismo precio base. El pan es artesano, con masa madre y sin conservantes.",
+          "price": 12.9,
+          "imageKey": "burger-deja-vu-deluxe",
+          "tags": ["Pan artesano","Con patatas","Elige carne"],
+          "allergens": [
+            {
+              "id": "gluten",
+              "level": "contains"
+            },
+            {
+              "id": "milk",
+              "level": "contains"
+            },
+            {
+              "id": "egg",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "14 min",
+          "highlight": "Carne, Queso, Bacon y Huevo",
+          "modifierGroups": ["burger-protein-choice","legacy-burger-extras"]
+        },
+        {
+          "id": "hamburgers-dracula",
+          "name": "Dracula",
+          "description": "Doble de carne, doble de queso, cebolla caramelizada, pepinillos y bacon (sin verduras). Ternera o pollo crunchy. Pan artesano con masa madre y sin conservantes.",
+          "longDescription": "Doble de carne, doble de queso, cebolla caramelizada, pepinillos y bacon (sin verduras). Todas nuestras hamburguesas pueden ser de ternera o pollo crunchy y van acompanadas de patatas fritas. Disponible en ternera o pollo crunchy con el mismo precio base. El pan es artesano, con masa madre y sin conservantes.",
+          "price": 14.5,
+          "imageKey": "burger-dracula",
+          "tags": ["Pan artesano","Con patatas","Elige carne"],
+          "allergens": [
+            {
+              "id": "gluten",
+              "level": "contains"
+            },
+            {
+              "id": "milk",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "14 min",
+          "highlight": "Doble de carne y doble de queso",
+          "modifierGroups": ["burger-protein-choice","legacy-burger-extras"]
+        }
+      ]
+    },
+    {
+      "id": "combined-plates",
+      "name": "Platos combinados",
+      "shortName": "Combinados",
+      "description": "Platos combinados servidos con ensalada, patatas fritas y huevo.",
+      "note": "Huevo y patatas",
+      "tone": "ember",
+      "products": [
+        {
+          "id": "combined-plates-plato-combinado",
+          "name": "Plato combinado",
+          "description": "Ensalada, patatas fritas y huevo. Elige lomo, pollo, bacon o panceta.",
+          "longDescription": "Plato combinado con ensalada, patatas fritas y huevo. Puedes pedirlo con cinta de lomo, pollo a la plancha, bacon o panceta.",
+          "price": 12.5,
+          "imageKey": "combined-plate",
+          "tags": ["Con huevo","Elige principal"],
+          "allergens": [
+            {
+              "id": "egg",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "13 min",
+          "highlight": "Lomo, pollo, bacon o panceta",
+          "modifierGroups": ["combined-plate-choice"]
+        }
+      ]
+    },
+    {
+      "id": "menus",
+      "name": "Menus",
+      "shortName": "Menus",
+      "description": "Menus completos con kebab, shawarma, combi o hamburguesa, mas patatas y bebida.",
+      "note": "Recoger o enviar",
+      "tone": "gold",
+      "products": [
+        {
+          "id": "menus-menu-kebab",
+          "name": "Menu Kebab",
+          "description": "Pollo 11,50 €, mixto 12,00 €, ternera 13,00 € y falafel 10,50 €. Con ensalada de repollo, tomate y cebolla, patatas fritas y bebida. Pan artesano con masa madre y sin conservantes.",
+          "longDescription": "Menu kebab con ensalada de repollo, tomate y cebolla, patatas fritas y bebida incluida. Precio segun version: pollo 11,50 €, mixto 12,00 €, ternera 13,00 € y falafel 10,50 €. El pan es artesano, con masa madre y sin conservantes.",
+          "price": 11.5,
+          "imageKey": "menu-kebab",
+          "tags": ["Pan artesano","Menus Kebabs","Menu","Elige version"],
+          "allergens": [
+            {
+              "id": "gluten",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "15 min",
+          "highlight": "Kebab, patatas y bebida",
+          "modifierGroups": ["menu-protein","drink","sauces"],
+          "priceLabel": "Pollo 11,50 / Mixto 12,00 / Ternera 13,00 / Falafel 10,50"
+        },
+        {
+          "id": "menus-menu-kebab-falafel",
+          "name": "Menu Kebab de falafel",
+          "description": "Kebab de falafel con ensalada de repollo, tomate y cebolla, patatas fritas y bebida. Pan artesano con masa madre y sin conservantes.",
+          "longDescription": "Menu de kebab de falafel con ensalada de repollo, tomate y cebolla, patatas fritas, bebida incluida y salsas a elegir. El pan es artesano, con masa madre y sin conservantes.",
+          "price": 10.5,
+          "imageKey": "menu-kebab",
+          "vegetarian": true,
+          "tags": ["Pan artesano","Menus Kebabs","Menu","Vegetariano"],
+          "allergens": [
+            {
+              "id": "gluten",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "15 min",
+          "highlight": "Falafel, patatas y bebida",
+          "modifierGroups": ["drink","sauces"]
+        },
+        {
+          "id": "menus-menu-shawarma",
+          "name": "Menu Shawarma",
+          "description": "Pollo 11,50 €, mixto 12,00 €, ternera 13,00 € y falafel 10,50 €. Con ensalada de repollo, tomate y cebolla, patatas fritas y bebida.",
+          "longDescription": "Menu shawarma con ensalada de repollo, tomate y cebolla, patatas fritas y bebida incluida. Precio segun version: pollo 11,50 €, mixto 12,00 €, ternera 13,00 € y falafel 10,50 €.",
+          "price": 11.5,
+          "imageKey": "menu-shawarma",
+          "tags": ["Menus Shawarma","Menu","Elige version"],
+          "allergens": [
+            {
+              "id": "gluten",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "15 min",
+          "highlight": "Shawarma, patatas y bebida",
+          "modifierGroups": ["menu-protein","drink","sauces"],
+          "priceLabel": "Pollo 11,50 / Mixto 12,00 / Ternera 13,00 / Falafel 10,50"
+        },
+        {
+          "id": "menus-menu-shawarma-falafel",
+          "name": "Menu Shawarma de falafel",
+          "description": "Shawarma de falafel con ensalada de repollo, tomate y cebolla, patatas fritas y bebida.",
+          "longDescription": "Menu de shawarma de falafel con ensalada de repollo, tomate y cebolla, patatas fritas, bebida incluida y salsas a elegir.",
+          "price": 10.5,
+          "imageKey": "menu-shawarma",
+          "vegetarian": true,
+          "tags": ["Menus Shawarma","Menu","Vegetariano"],
+          "allergens": [
+            {
+              "id": "gluten",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "15 min",
+          "highlight": "Falafel, patatas y bebida",
+          "modifierGroups": ["drink","sauces"]
+        },
+        {
+          "id": "menus-menu-combi-simple",
+          "name": "Menu Combi simple",
+          "description": "Pollo 11,50 €, mixto 12,00 €, ternera 13,50 € y falafel 10,20 €. Con guarnicion, bebida y salsas.",
+          "longDescription": "Menu combi simple con patatas, arroz o ensalada, bebida incluida y salsas. Precio segun version: pollo 11,50 €, mixto 12,00 €, ternera 13,50 € y falafel 10,20 €.",
+          "price": 11.5,
+          "imageKey": "combi",
+          "tags": ["Menus Combi","Menu","Elige version"],
+          "prepTime": "15 min",
+          "highlight": "Combi simple y bebida",
+          "modifierGroups": ["menu-combi-simple-protein","side","drink","sauces"],
+          "priceLabel": "Pollo 11,50 / Mixto 12,00 / Ternera 13,50 / Falafel 10,20"
+        },
+        {
+          "id": "menus-menu-combi-simple-falafel",
+          "name": "Menu Combi simple de falafel",
+          "description": "Combi simple de falafel con guarnicion, bebida y salsas.",
+          "longDescription": "Menu combi simple de falafel con patatas, arroz o ensalada, bebida incluida y salsas a elegir.",
+          "price": 10.2,
+          "imageKey": "falafel",
+          "vegetarian": true,
+          "tags": ["Menus Combi","Menu","Vegetariano"],
+          "prepTime": "15 min",
+          "highlight": "Falafel, guarnicion y bebida",
+          "modifierGroups": ["side","drink","sauces"]
+        },
+        {
+          "id": "menus-menu-combi-doble",
+          "name": "Menu Combi doble",
+          "description": "Pollo 13,50 €, mixto 14,00 €, ternera 15,50 € y falafel 11,50 €. Con guarnicion, bebida y salsas.",
+          "longDescription": "Menu combi doble con patatas, arroz o ensalada, bebida incluida y salsas. Precio segun version: pollo 13,50 €, mixto 14,00 €, ternera 15,50 € y falafel 11,50 €.",
+          "price": 13.5,
+          "imageKey": "combi",
+          "tags": ["Menus Combi","Menu","Elige version"],
+          "prepTime": "15 min",
+          "highlight": "Combi doble y bebida",
+          "modifierGroups": ["menu-combi-double-protein","side","drink","sauces"],
+          "priceLabel": "Pollo 13,50 / Mixto 14,00 / Ternera 15,50 / Falafel 11,50"
+        },
+        {
+          "id": "menus-menu-combi-doble-falafel",
+          "name": "Menu Combi doble de falafel",
+          "description": "Combi doble de falafel con guarnicion, bebida y salsas.",
+          "longDescription": "Menu combi doble de falafel con patatas, arroz o ensalada, bebida incluida y salsas a elegir.",
+          "price": 11.5,
+          "imageKey": "falafel",
+          "vegetarian": true,
+          "tags": ["Menus Combi","Menu","Vegetariano"],
+          "prepTime": "15 min",
+          "highlight": "Doble de falafel y bebida",
+          "modifierGroups": ["side","drink","sauces"]
+        },
+        {
+          "id": "menus-menu-deja-vu",
+          "name": "Menu Deja Vu",
+          "description": "Pollo 15,50 €, mixto 16,00 €, ternera 17,50 € y falafel 13,50 €. Con guarnicion, bebida y salsas.",
+          "longDescription": "Menu Plato Deja Vu con patatas o arroz, repollo, tomate, cebolla, salsas y bebida incluida. Precio segun version: pollo 15,50 €, mixto 16,00 €, ternera 17,50 € y falafel 13,50 €.",
+          "price": 15.5,
+          "imageKey": "plate-deja-vu",
+          "tags": ["Menus Combi","Menu","Elige version"],
+          "prepTime": "15 min",
+          "highlight": "Deja Vu, guarnicion y bebida",
+          "modifierGroups": ["menu-dejavu-protein","side","drink","sauces"],
+          "priceLabel": "Pollo 15,50 / Mixto 16,00 / Ternera 17,50 / Falafel 13,50"
+        },
+        {
+          "id": "menus-menu-deja-vu-falafel",
+          "name": "Menu Deja Vu de falafel",
+          "description": "Plato Deja Vu de falafel con guarnicion, bebida y salsas.",
+          "longDescription": "Version vegetariana del Menu Deja Vu con falafel, guarnicion a elegir, bebida y salsas.",
+          "price": 13.5,
+          "imageKey": null,
+          "vegetarian": true,
+          "tags": ["Menus Combi","Menu","Vegetariano"],
+          "prepTime": "15 min",
+          "highlight": "Falafel, guarnicion y bebida",
+          "modifierGroups": ["side","drink","sauces"]
+        },
+        {
+          "id": "menus-menu-platos-combinados",
+          "name": "Menu platos combinados",
+          "description": "Plato combinado con ensalada, patatas fritas, huevo y bebida.",
+          "longDescription": "Menu de plato combinado con ensalada, patatas fritas, huevo y bebida incluida.",
+          "price": 14.5,
+          "imageKey": "combined-plate",
+          "tags": ["Menu","Con huevo"],
+          "allergens": [
+            {
+              "id": "egg",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "13 min",
+          "highlight": "Combinado con bebida",
+          "modifierGroups": ["drink"]
+        },
+        {
+          "id": "menus-hamburguesa-simple",
+          "name": "Hamburguesa Simple",
+          "description": "Carne y queso con patatas fritas y refresco o cerveza. Ternera o pollo crunchy. Pan artesano con masa madre y sin conservantes.",
+          "longDescription": "Carne y queso con patatas fritas y refresco o cerveza. (Hamburguesa + Patatas + Bebida) Los menus son para recoger y a domicilio. En local, solo se sirven en horario de comida. Disponible en ternera o pollo crunchy con el mismo precio base. El pan es artesano, con masa madre y sin conservantes.",
+          "price": 12,
+          "imageKey": "burger-simple",
+          "tags": ["Pan artesano","Menus Hamburguesas","Menu","Elige carne"],
+          "allergens": [
+            {
+              "id": "gluten",
+              "level": "contains"
+            },
+            {
+              "id": "milk",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "15 min",
+          "highlight": "Menus Hamburguesas",
+          "modifierGroups": ["burger-protein-choice","drink","legacy-burger-extras"]
+        },
+        {
+          "id": "menus-hamburguesa-deja-vu-simple",
+          "name": "Hamburguesa Deja Vu Simple",
+          "description": "Carne, queso, lechuga, tomate, cebolla y bacon con patatas fritas y refresco o cerveza. Ternera o pollo crunchy. Pan artesano con masa madre y sin conservantes.",
+          "longDescription": "Carne, queso, lechuga, tomate, cebolla y bacon con patatas fritas y refresco o cerveza. (Hamburguesa + Patatas + Bebida) Los menus son para recoger y a domicilio. En local, solo se sirven en horario de comida. Disponible en ternera o pollo crunchy con el mismo precio base. El pan es artesano, con masa madre y sin conservantes.",
+          "price": 14,
+          "imageKey": "burger-deja-vu-simple",
+          "tags": ["Pan artesano","Menus Hamburguesas","Menu","Elige carne"],
+          "allergens": [
+            {
+              "id": "gluten",
+              "level": "contains"
+            },
+            {
+              "id": "milk",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "15 min",
+          "highlight": "Menus Hamburguesas",
+          "modifierGroups": ["burger-protein-choice","drink","legacy-burger-extras"]
+        },
+        {
+          "id": "menus-hamburguesa-rulo-de-cabra",
+          "name": "Hamburguesa Rulo de Cabra",
+          "description": "Carne, queso de cabra, bacon y cebolla frita con patatas fritas y refresco o cerveza. Ternera o pollo crunchy. Pan artesano con masa madre y sin conservantes.",
+          "longDescription": "Carne, queso de cabra, bacon y cebolla frita con patatas fritas y refresco o cerveza. (Hamburguesa + Patatas + Bebida) Los menus son para recoger y a domicilio. En local, solo se sirven en horario de comida. Disponible en ternera o pollo crunchy con el mismo precio base. El pan es artesano, con masa madre y sin conservantes.",
+          "price": 14,
+          "imageKey": "burger-rulo",
+          "tags": ["Pan artesano","Menus Hamburguesas","Menu","Elige carne"],
+          "allergens": [
+            {
+              "id": "gluten",
+              "level": "contains"
+            },
+            {
+              "id": "milk",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "15 min",
+          "highlight": "Menus Hamburguesas",
+          "modifierGroups": ["burger-protein-choice","drink","legacy-burger-extras"]
+        },
+        {
+          "id": "menus-hamburguesa-deja-vu",
+          "name": "Hamburguesa Deja Vu",
+          "description": "Carne, queso, bacon, huevo, lechuga, tomate y cebolla con patatas fritas y refresco o cerveza. Ternera o pollo crunchy. Pan artesano con masa madre y sin conservantes.",
+          "longDescription": "Carne, queso, bacon, huevo, lechuga, tomate y cebolla con patatas fritas y refresco o cerveza. (Hamburguesa + Patatas + Bebida) Los menus son para recoger y a domicilio. En local, solo se sirven en horario de comida. Disponible en ternera o pollo crunchy con el mismo precio base. El pan es artesano, con masa madre y sin conservantes.",
+          "price": 14.4,
+          "imageKey": "burger-deja-vu-simple",
+          "tags": ["Pan artesano","Menus Hamburguesas","Menu","Elige carne"],
+          "allergens": [
+            {
+              "id": "gluten",
+              "level": "contains"
+            },
+            {
+              "id": "milk",
+              "level": "contains"
+            },
+            {
+              "id": "egg",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "15 min",
+          "highlight": "Menus Hamburguesas",
+          "modifierGroups": ["burger-protein-choice","drink","legacy-burger-extras"]
+        },
+        {
+          "id": "menus-hamburguesa-deja-vu-deluxe",
+          "name": "Hamburguesa Deja Vu Deluxe",
+          "description": "Carne, queso, bacon, huevo, cebolla caramelizada y pepinillos (sin verduras) con patatas fritas y refresco o cerveza. Ternera o pollo crunchy. Pan artesano con masa madre y sin conservantes.",
+          "longDescription": "Carne, queso, bacon, huevo, cebolla caramelizada y pepinillos (sin verduras) con patatas fritas y refresco o cerveza. (Hamburguesa + Patatas + Bebida) Los menus son para recoger y a domicilio. En local, solo se sirven en horario de comida. Disponible en ternera o pollo crunchy con el mismo precio base. El pan es artesano, con masa madre y sin conservantes.",
+          "price": 14.4,
+          "imageKey": "burger-deja-vu-deluxe",
+          "tags": ["Pan artesano","Menus Hamburguesas","Menu","Elige carne"],
+          "allergens": [
+            {
+              "id": "gluten",
+              "level": "contains"
+            },
+            {
+              "id": "milk",
+              "level": "contains"
+            },
+            {
+              "id": "egg",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "15 min",
+          "highlight": "Menus Hamburguesas",
+          "modifierGroups": ["burger-protein-choice","drink","legacy-burger-extras"]
+        },
+        {
+          "id": "menus-hamburguesa-dracula",
+          "name": "Hamburguesa Dracula",
+          "description": "Doble de carne, doble de queso, cebolla caramelizada, pepinillos y bacon (sin verduras) con patatas fritas y refresco o cerveza. Ternera o pollo crunchy. Pan artesano con masa madre y sin conservantes.",
+          "longDescription": "Doble de carne, doble de queso, cebolla caramelizada, pepinillos y bacon (sin verduras) con patatas fritas y refresco o cerveza. (Hamburguesa + Patatas + Bebida) Los menus son para recoger y a domicilio. En local, solo se sirven en horario de comida. Disponible en ternera o pollo crunchy con el mismo precio base. El pan es artesano, con masa madre y sin conservantes.",
+          "price": 16,
+          "imageKey": "burger-dracula",
+          "tags": ["Pan artesano","Menus Hamburguesas","Menu","Elige carne"],
+          "allergens": [
+            {
+              "id": "gluten",
+              "level": "contains"
+            },
+            {
+              "id": "milk",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "15 min",
+          "highlight": "Menus Hamburguesas",
+          "modifierGroups": ["burger-protein-choice","drink","legacy-burger-extras"]
+        }
+      ]
+    },
+    {
+      "id": "desserts",
+      "name": "Postres",
+      "shortName": "Postres",
+      "description": "Profiteroles, bolas de helado, tarta de queso y milkshakes.",
+      "note": "Postres y batidos",
+      "tone": "stone",
+      "products": [
+        {
+          "id": "desserts-profiteroles",
+          "name": "Profiteroles",
+          "description": "Profiteroles clasicos servidos frios.",
+          "price": 5.5,
+          "imageKey": "dessert-profiteroles",
+          "tags": ["Postre"],
+          "allergens": [
+            {
+              "id": "gluten",
+              "level": "contains"
+            },
+            {
+              "id": "milk",
+              "level": "contains"
+            },
+            {
+              "id": "egg",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "5 min",
+          "highlight": "Profiteroles clasicos servidos frios"
+        },
+        {
+          "id": "desserts-bola-de-helado",
+          "name": "Bola de Helado",
+          "description": "Chocolate, vainilla o fresa.",
+          "price": 1.9,
+          "imageKey": "dessert",
+          "tags": ["Postre"],
+          "allergens": [
+            {
+              "id": "milk",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "5 min",
+          "highlight": "Chocolate, vainilla o fresa"
+        },
+        {
+          "id": "desserts-tarta-de-queso",
+          "name": "Tarta de Queso",
+          "description": "Tarta de queso de la casa.",
+          "price": 6.5,
+          "imageKey": "dessert-cheesecake",
+          "featured": true,
+          "tags": ["Postre","Destacado"],
+          "allergens": [
+            {
+              "id": "milk",
+              "level": "contains"
+            },
+            {
+              "id": "egg",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "5 min",
+          "highlight": "Tarta de queso de la casa"
+        },
+        {
+          "id": "desserts-milkshake",
+          "name": "Milkshake",
+          "description": "Vainilla, fresa, chocolate o cookies.",
+          "price": 5.9,
+          "imageKey": "dessert",
+          "tags": ["Postre"],
+          "allergens": [
+            {
+              "id": "gluten",
+              "level": "contains"
+            },
+            {
+              "id": "milk",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "5 min",
+          "highlight": "Vainilla, fresa, chocolate o cookies"
+        },
+        {
+          "id": "desserts-tropical-heaven",
+          "name": "Tropical Heaven",
+          "description": "Melon, mango, kiwi y pina.",
+          "price": 5.9,
+          "imageKey": "smoothie-tropical-heaven",
+          "featured": true,
+          "vegetarian": true,
+          "tags": ["Hecho al momento","Postre","Destacado"],
+          "prepTime": "5 min",
+          "highlight": "Melon, mango, kiwi y pina"
+        },
+        {
+          "id": "desserts-caribbean-passion",
+          "name": "Caribbean Passion",
+          "description": "Mango, papaya y pina.",
+          "price": 5.9,
+          "imageKey": "smoothie-caribbean-passion",
+          "bestseller": true,
+          "vegetarian": true,
+          "tags": ["Hecho al momento","Postre","Muy pedido"],
+          "prepTime": "5 min",
+          "highlight": "Mango, papaya y pina"
+        },
+        {
+          "id": "desserts-berries-paradise",
+          "name": "Berries Paradise",
+          "description": "Mango, cereza, arandano y fresa.",
+          "price": 5.9,
+          "imageKey": "smoothie-berries-paradise",
+          "vegetarian": true,
+          "tags": ["Hecho al momento","Postre"],
+          "prepTime": "5 min",
+          "highlight": "Mango, cereza, arandano y fresa"
+        },
+        {
+          "id": "desserts-colada-jungle",
+          "name": "Colada Jungle",
+          "description": "Platano, coco y pina.",
+          "price": 5.9,
+          "imageKey": "smoothie-colada-jungle",
+          "vegetarian": true,
+          "tags": ["Hecho al momento","Postre"],
+          "prepTime": "5 min",
+          "highlight": "Platano, coco y pina"
+        },
+        {
+          "id": "desserts-vitality",
+          "name": "Vitality",
+          "description": "Platano y fresa.",
+          "price": 5.9,
+          "imageKey": "smoothie-vitality",
+          "vegetarian": true,
+          "tags": ["Hecho al momento","Postre"],
+          "prepTime": "5 min",
+          "highlight": "Platano y fresa"
+        },
+        {
+          "id": "desserts-red-bliss",
+          "name": "Red Bliss",
+          "description": "Platano, arandano y frambuesa.",
+          "price": 5.9,
+          "imageKey": "smoothie-red-bliss",
+          "vegetarian": true,
+          "tags": ["Hecho al momento","Postre"],
+          "prepTime": "5 min",
+          "highlight": "Platano, arandano y frambuesa"
+        },
+        {
+          "id": "desserts-green-power",
+          "name": "Green Power",
+          "description": "Pepino, col rizada, pina y espinaca.",
+          "price": 5.9,
+          "imageKey": "smoothie-green-power",
+          "vegetarian": true,
+          "tags": ["Hecho al momento","Postre"],
+          "prepTime": "5 min",
+          "highlight": "Pepino, col rizada, pina y espinaca"
+        },
+        {
+          "id": "desserts-sunny-splash",
+          "name": "Sunny Splash",
+          "description": "Mango, limon, pina y fruta de la pasion.",
+          "price": 5.9,
+          "imageKey": "smoothie-sunny-splash",
+          "vegetarian": true,
+          "tags": ["Hecho al momento","Postre"],
+          "prepTime": "5 min",
+          "highlight": "Mango, limon, pina y fruta de la pasion"
+        },
+        {
+          "id": "desserts-dragon-fruit-mix",
+          "name": "Dragon Fruit Mix",
+          "description": "Mango, fresa y pitaya.",
+          "price": 5.9,
+          "imageKey": "smoothie-dragon-fruit-mix",
+          "vegetarian": true,
+          "tags": ["Hecho al momento","Postre"],
+          "prepTime": "5 min",
+          "highlight": "Mango, fresa y pitaya"
+        },
+        {
+          "id": "desserts-squeeze-nature",
+          "name": "Squeeze Nature",
+          "description": "Mango, zanahoria, pina y fruta de la pasion.",
+          "price": 5.9,
+          "imageKey": "smoothie-squeeze-nature",
+          "vegetarian": true,
+          "tags": ["Hecho al momento","Postre"],
+          "prepTime": "5 min",
+          "highlight": "Mango, zanahoria, pina y fruta de la pasion"
+        },
+        {
+          "id": "desserts-delightful",
+          "name": "Delightful",
+          "description": "Platano, arandano, mango y acai.",
+          "price": 5.9,
+          "imageKey": "smoothie-delightful",
+          "vegetarian": true,
+          "tags": ["Hecho al momento","Postre"],
+          "prepTime": "5 min",
+          "highlight": "Platano, arandano, mango y acai"
+        },
+        {
+          "id": "desserts-blue-lightning",
+          "name": "Blue Lightning",
+          "description": "Mango, platano, pina, melocoton, coco y espirulina azul.",
+          "price": 5.9,
+          "imageKey": "smoothie-blue-lightning",
+          "vegetarian": true,
+          "tags": ["Hecho al momento","Postre"],
+          "prepTime": "5 min",
+          "highlight": "Mango, platano, pina, melocoton y coco"
+        }
+      ]
+    },
+    {
+      "id": "smoothies",
+      "name": "Smoothies",
+      "shortName": "Zumit",
+      "description": "Smoothies naturales Zumit hechos al momento con fruta y verdura.",
+      "note": "Zumit natural",
+      "tone": "olive",
+      "products": [
+        {
+          "id": "smoothies-tropical-heaven",
+          "name": "Tropical Heaven",
+          "description": "Melon, mango, kiwi y pina.",
+          "longDescription": "Melon, mango, kiwi y pina. Hechos al momento. Elaborados al momento con fruta ultracongelada Zumit y zumo base de manzana.",
+          "price": 5.9,
+          "imageKey": "smoothie-tropical-heaven",
+          "featured": true,
+          "vegetarian": true,
+          "tags": ["Hecho al momento","Natural","Destacado"],
+          "prepTime": "4 min",
+          "highlight": "Melon, mango, kiwi y pina"
+        },
+        {
+          "id": "smoothies-caribbean-passion",
+          "name": "Caribbean Passion",
+          "description": "Mango, papaya y pina.",
+          "longDescription": "Mango, papaya y pina. Hechos al momento. Elaborados al momento con fruta ultracongelada Zumit y zumo base de manzana.",
+          "price": 5.9,
+          "imageKey": "smoothie-caribbean-passion",
+          "bestseller": true,
+          "vegetarian": true,
+          "tags": ["Hecho al momento","Natural","Muy pedido"],
+          "prepTime": "4 min",
+          "highlight": "Mango, papaya y pina"
+        },
+        {
+          "id": "smoothies-berries-paradise",
+          "name": "Berries Paradise",
+          "description": "Mango, cereza, arandano y fresa.",
+          "longDescription": "Mango, cereza, arandano y fresa. Hechos al momento. Elaborados al momento con fruta ultracongelada Zumit y zumo base de manzana.",
+          "price": 5.9,
+          "imageKey": "smoothie-berries-paradise",
+          "vegetarian": true,
+          "tags": ["Hecho al momento","Natural"],
+          "prepTime": "4 min",
+          "highlight": "Mango, cereza, arandano y fresa"
+        },
+        {
+          "id": "smoothies-colada-jungle",
+          "name": "Colada Jungle",
+          "description": "Platano, coco y pina.",
+          "longDescription": "Platano, coco y pina. Hechos al momento. Elaborados al momento con fruta ultracongelada Zumit y zumo base de manzana.",
+          "price": 5.9,
+          "imageKey": "smoothie-colada-jungle",
+          "vegetarian": true,
+          "tags": ["Hecho al momento","Natural"],
+          "prepTime": "4 min",
+          "highlight": "Platano, coco y pina"
+        },
+        {
+          "id": "smoothies-vitality",
+          "name": "Vitality",
+          "description": "Platano y fresa.",
+          "longDescription": "Platano y fresa. Hechos al momento. Elaborados al momento con fruta ultracongelada Zumit y zumo base de manzana.",
+          "price": 5.9,
+          "imageKey": "smoothie-vitality",
+          "vegetarian": true,
+          "tags": ["Hecho al momento","Natural"],
+          "prepTime": "4 min",
+          "highlight": "Platano y fresa"
+        },
+        {
+          "id": "smoothies-red-bliss",
+          "name": "Red Bliss",
+          "description": "Platano, arandano y frambuesa.",
+          "longDescription": "Platano, arandano y frambuesa. Hechos al momento. Elaborados al momento con fruta ultracongelada Zumit y zumo base de manzana.",
+          "price": 5.9,
+          "imageKey": "smoothie-red-bliss",
+          "vegetarian": true,
+          "tags": ["Hecho al momento","Natural"],
+          "prepTime": "4 min",
+          "highlight": "Platano, arandano y frambuesa"
+        },
+        {
+          "id": "smoothies-green-power",
+          "name": "Green Power",
+          "description": "Pepino, col rizada, pina y espinaca.",
+          "longDescription": "Pepino, col rizada, pina y espinaca. Hechos al momento. Elaborados al momento con fruta ultracongelada Zumit y zumo base de manzana.",
+          "price": 5.9,
+          "imageKey": "smoothie-green-power",
+          "vegetarian": true,
+          "tags": ["Hecho al momento","Natural"],
+          "prepTime": "4 min",
+          "highlight": "Pepino, col rizada, pina y espinaca"
+        },
+        {
+          "id": "smoothies-sunny-splash",
+          "name": "Sunny Splash",
+          "description": "Mango, limon, pina y fruta de la pasion.",
+          "longDescription": "Mango, limon, pina y fruta de la pasion. Hechos al momento. Elaborados al momento con fruta ultracongelada Zumit y zumo base de manzana.",
+          "price": 5.9,
+          "imageKey": "smoothie-sunny-splash",
+          "vegetarian": true,
+          "tags": ["Hecho al momento","Natural"],
+          "prepTime": "4 min",
+          "highlight": "Mango, limon, pina y fruta de la pasion"
+        },
+        {
+          "id": "smoothies-dragon-fruit-mix",
+          "name": "Dragon Fruit Mix",
+          "description": "Mango, fresa y pitaya.",
+          "longDescription": "Mango, fresa y pitaya. Hechos al momento. Elaborados al momento con fruta ultracongelada Zumit y zumo base de manzana.",
+          "price": 5.9,
+          "imageKey": "smoothie-dragon-fruit-mix",
+          "vegetarian": true,
+          "tags": ["Hecho al momento","Natural"],
+          "prepTime": "4 min",
+          "highlight": "Mango, fresa y pitaya"
+        },
+        {
+          "id": "smoothies-squeeze-nature",
+          "name": "Squeeze Nature",
+          "description": "Mango, zanahoria, pina y fruta de la pasion.",
+          "longDescription": "Mango, zanahoria, pina y fruta de la pasion. Hechos al momento. Elaborados al momento con fruta ultracongelada Zumit y zumo base de manzana.",
+          "price": 5.9,
+          "imageKey": "smoothie-squeeze-nature",
+          "vegetarian": true,
+          "tags": ["Hecho al momento","Natural"],
+          "prepTime": "4 min",
+          "highlight": "Mango, zanahoria, pina y fruta de la pasion"
+        },
+        {
+          "id": "smoothies-delightful",
+          "name": "Delightful",
+          "description": "Platano, arandano, mango y acai.",
+          "longDescription": "Platano, arandano, mango y acai. Hechos al momento. Elaborados al momento con fruta ultracongelada Zumit y zumo base de manzana.",
+          "price": 5.9,
+          "imageKey": "smoothie-delightful",
+          "vegetarian": true,
+          "tags": ["Hecho al momento","Natural"],
+          "prepTime": "4 min",
+          "highlight": "Platano, arandano, mango y acai"
+        },
+        {
+          "id": "smoothies-blue-lightning",
+          "name": "Blue Lightning",
+          "description": "Mango, platano, pina, melocoton, coco y espirulina azul.",
+          "longDescription": "Mango, platano, pina, melocoton, coco y espirulina azul. Hechos al momento. Elaborados al momento con fruta ultracongelada Zumit y zumo base de manzana.",
+          "price": 5.9,
+          "imageKey": "smoothie-blue-lightning",
+          "vegetarian": true,
+          "tags": ["Hecho al momento","Natural"],
+          "prepTime": "4 min",
+          "highlight": "Mango, platano, pina, melocoton y coco"
+        }
+      ]
+    },
+    {
+      "id": "drinks",
+      "name": "Bebidas",
+      "shortName": "Bebidas",
+      "description": "Agua, refrescos, cerveza, vino, cafe y opciones para llevar.",
+      "note": "Bebidas",
+      "tone": "olive",
+      "products": [
+        {
+          "id": "drinks-agua-500-ml",
+          "name": "Agua (500 ml)",
+          "description": "Bebida disponible para mesa, recogida o llevar.",
+          "price": 2,
+          "imageKey": "drinks",
+          "tags": ["Bebida"],
+          "prepTime": "2 min",
+          "highlight": "Bebida disponible para mesa, recogida o llevar"
+        },
+        {
+          "id": "drinks-agua-con-gas",
+          "name": "Agua con gas",
+          "description": "Bebida disponible para mesa, recogida o llevar.",
+          "price": 3,
+          "imageKey": "drinks",
+          "tags": ["Bebida"],
+          "prepTime": "2 min",
+          "highlight": "Bebida disponible para mesa, recogida o llevar"
+        },
+        {
+          "id": "drinks-refresco",
+          "name": "Refrescos",
+          "description": "Bebida disponible para mesa, recogida o llevar.",
+          "price": 3,
+          "imageKey": "drinks",
+          "tags": ["Bebida"],
+          "prepTime": "2 min",
+          "highlight": "Bebida disponible para mesa, recogida o llevar"
+        },
+        {
+          "id": "drinks-copa-de-cerveza",
+          "name": "Copa de cerveza",
+          "description": "Bebida disponible para mesa, recogida o llevar.",
+          "price": 3,
+          "imageKey": "drinks",
+          "tags": ["Bebida"],
+          "allergens": [
+            {
+              "id": "gluten",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "2 min",
+          "highlight": "Bebida disponible para mesa, recogida o llevar"
+        },
+        {
+          "id": "drinks-tercio",
+          "name": "Tercio",
+          "description": "Bebida disponible para mesa, recogida o llevar.",
+          "price": 3.3,
+          "imageKey": "drinks",
+          "tags": ["Bebida"],
+          "allergens": [
+            {
+              "id": "gluten",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "2 min",
+          "highlight": "Bebida disponible para mesa, recogida o llevar"
+        },
+        {
+          "id": "drinks-jarra-de-cerveza",
+          "name": "Jarra de cerveza",
+          "description": "Bebida disponible para mesa, recogida o llevar.",
+          "price": 4.5,
+          "imageKey": "drinks",
+          "tags": ["Bebida"],
+          "allergens": [
+            {
+              "id": "gluten",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "2 min",
+          "highlight": "Bebida disponible para mesa, recogida o llevar"
+        },
+        {
+          "id": "drinks-cerveza-especial",
+          "name": "Cerveza especial",
+          "description": "Bebida disponible para mesa, recogida o llevar.",
+          "price": 3.5,
+          "imageKey": "drinks",
+          "tags": ["Bebida"],
+          "allergens": [
+            {
+              "id": "gluten",
+              "level": "contains"
+            }
+          ],
+          "prepTime": "2 min",
+          "highlight": "Bebida disponible para mesa, recogida o llevar"
+        },
+        {
+          "id": "drinks-copa-de-vino",
+          "name": "Copa de vino",
+          "description": "Bebida disponible para mesa, recogida o llevar.",
+          "price": 3.2,
+          "imageKey": "drinks",
+          "tags": ["Bebida","Desde"],
+          "prepTime": "2 min",
+          "highlight": "Bebida disponible para mesa, recogida o llevar"
+        },
+        {
+          "id": "drinks-botella-de-vino",
+          "name": "Botella de vino",
+          "description": "Bebida disponible para mesa, recogida o llevar.",
+          "price": 17,
+          "imageKey": "drinks",
+          "tags": ["Bebida"],
+          "prepTime": "2 min",
+          "highlight": "Bebida disponible para mesa, recogida o llevar"
+        },
+        {
+          "id": "drinks-tinto-de-verano",
+          "name": "Tinto de verano",
+          "description": "Bebida disponible para mesa, recogida o llevar.",
+          "price": 4.5,
+          "imageKey": "drinks",
+          "tags": ["Bebida"],
+          "prepTime": "2 min",
+          "highlight": "Bebida disponible para mesa, recogida o llevar"
+        },
+        {
+          "id": "drinks-cafe",
+          "name": "Cafe",
+          "description": "Bebida disponible para mesa, recogida o llevar.",
+          "price": 2,
+          "imageKey": "drinks",
+          "tags": ["Bebida"],
+          "prepTime": "2 min",
+          "highlight": "Bebida disponible para mesa, recogida o llevar"
+        },
+        {
+          "id": "drinks-infusiones",
+          "name": "Infusiones",
+          "description": "Bebida disponible para mesa, recogida o llevar.",
+          "price": 2.2,
+          "imageKey": "drinks",
+          "tags": ["Bebida"],
+          "prepTime": "2 min",
+          "highlight": "Bebida disponible para mesa, recogida o llevar"
+        },
+        {
+          "id": "drinks-latas-para-llevar",
+          "name": "Latas para llevar",
+          "description": "Bebida disponible para mesa, recogida o llevar.",
+          "price": 2,
+          "imageKey": "drinks",
+          "tags": ["Bebida"],
+          "prepTime": "2 min",
+          "highlight": "Bebida disponible para mesa, recogida o llevar"
+        }
+      ]
+    }
+  ],
+  "modifiers": [
+    {
+      "id": "kebab-protein",
+      "name": "Version",
+      "description": "Pollo, mixto, ternera o falafel",
+      "selectionType": "single",
+      "required": true,
+      "options": [
+        {
+          "id": "kebab-pollo",
+          "name": "Pollo",
+          "default": true
+        },
+        {
+          "id": "kebab-ternera",
+          "name": "Ternera",
+          "price": 1.5
+        },
+        {
+          "id": "kebab-mixto",
+          "name": "Mixto",
+          "price": 0.5
+        },
+        {
+          "id": "kebab-falafel",
+          "name": "Falafel",
+          "price": -1
+        }
+      ]
+    },
+    {
+      "id": "sauces",
+      "name": "Salsas",
+      "description": "Elige hasta 3 para tu pedido",
+      "selectionType": "multiple",
+      "maxSelections": 3,
+      "options": [
+        {
+          "id": "salsa-blanca",
+          "name": "Salsa blanca",
+          "default": true
+        },
+        {
+          "id": "salsa-picante",
+          "name": "Salsa picante"
+        },
+        {
+          "id": "salsa-yogur",
+          "name": "Salsa yogur con hierbas"
+        },
+        {
+          "id": "salsa-bbq",
+          "name": "BBQ turca"
+        },
+        {
+          "id": "salsa-ajo",
+          "name": "Alioli suave"
+        }
+      ]
+    },
+    {
+      "id": "legacy-turkish-extras",
+      "name": "Extras del local",
+      "description": "Opciones extra visibles en la carta antigua",
+      "selectionType": "multiple",
+      "maxSelections": 3,
+      "options": [
+        {
+          "id": "legacy-extra-bread",
+          "name": "Extra de pan",
+          "price": 0.7
+        },
+        {
+          "id": "legacy-extra-sauce",
+          "name": "Extra de salsa",
+          "price": 0.5
+        },
+        {
+          "id": "legacy-extra-cheese",
+          "name": "Extra de queso",
+          "price": 0.5
+        }
+      ]
+    },
+    {
+      "id": "shawarma-protein",
+      "name": "Version",
+      "description": "Pollo, mixto, ternera o falafel",
+      "selectionType": "single",
+      "required": true,
+      "options": [
+        {
+          "id": "shawarma-pollo",
+          "name": "Pollo",
+          "default": true
+        },
+        {
+          "id": "shawarma-ternera",
+          "name": "Ternera",
+          "price": 1.5
+        },
+        {
+          "id": "shawarma-mixto",
+          "name": "Mixto",
+          "price": 0.5
+        },
+        {
+          "id": "shawarma-falafel",
+          "name": "Falafel"
+        }
+      ]
+    },
+    {
+      "id": "combi-simple-protein",
+      "name": "Version",
+      "description": "Pollo, mixto, ternera o falafel",
+      "selectionType": "single",
+      "required": true,
+      "options": [
+        {
+          "id": "combi-simple-pollo",
+          "name": "Pollo",
+          "default": true
+        },
+        {
+          "id": "combi-simple-ternera",
+          "name": "Ternera",
+          "price": 2
+        },
+        {
+          "id": "combi-simple-mixto",
+          "name": "Mixto",
+          "price": 0.5
+        },
+        {
+          "id": "combi-simple-falafel",
+          "name": "Falafel",
+          "price": -1.3
+        }
+      ]
+    },
+    {
+      "id": "side",
+      "name": "Guarnicion",
+      "description": "Escoge una opcion",
+      "selectionType": "single",
+      "required": true,
+      "options": [
+        {
+          "id": "patatas",
+          "name": "Patatas fritas",
+          "default": true
+        },
+        {
+          "id": "arroz",
+          "name": "Arroz especiado"
+        },
+        {
+          "id": "bulgur",
+          "name": "Bulgur con hierbas"
+        },
+        {
+          "id": "ensalada",
+          "name": "Ensalada fresca"
+        }
+      ]
+    },
+    {
+      "id": "legacy-plate-extras",
+      "name": "Extras del plato",
+      "description": "Suplementos tal como aparecian en la carta antigua",
+      "selectionType": "multiple",
+      "maxSelections": 2,
+      "options": [
+        {
+          "id": "legacy-plate-bread",
+          "name": "Extra de pan",
+          "price": 0.5
+        },
+        {
+          "id": "legacy-plate-cheese",
+          "name": "Extra de queso",
+          "price": 0.5
+        }
+      ]
+    },
+    {
+      "id": "combi-double-protein",
+      "name": "Version",
+      "description": "Pollo, mixto, ternera o falafel",
+      "selectionType": "single",
+      "required": true,
+      "options": [
+        {
+          "id": "combi-double-pollo",
+          "name": "Pollo",
+          "default": true
+        },
+        {
+          "id": "combi-double-ternera",
+          "name": "Ternera",
+          "price": 2
+        },
+        {
+          "id": "combi-double-mixto",
+          "name": "Mixto",
+          "price": 0.5
+        },
+        {
+          "id": "combi-double-falafel",
+          "name": "Falafel"
+        }
+      ]
+    },
+    {
+      "id": "dejavu-protein",
+      "name": "Version",
+      "description": "Pollo, mixto, ternera o falafel",
+      "selectionType": "single",
+      "required": true,
+      "options": [
+        {
+          "id": "dejavu-pollo",
+          "name": "Pollo",
+          "default": true
+        },
+        {
+          "id": "dejavu-ternera",
+          "name": "Ternera",
+          "price": 2.5
+        },
+        {
+          "id": "dejavu-mixto",
+          "name": "Mixto",
+          "price": 1
+        },
+        {
+          "id": "dejavu-falafel",
+          "name": "Falafel",
+          "price": -1.5
+        }
+      ]
+    },
+    {
+      "id": "burger-protein-choice",
+      "name": "Carne",
+      "description": "Ternera o pollo crunchy",
+      "selectionType": "single",
+      "required": true,
+      "options": [
+        {
+          "id": "burger-ternera",
+          "name": "Ternera",
+          "default": true
+        },
+        {
+          "id": "burger-pollo-crunchy",
+          "name": "Pollo crunchy"
+        }
+      ]
+    },
+    {
+      "id": "legacy-burger-extras",
+      "name": "Extras de hamburguesa",
+      "description": "Suplementos indicados en la carta antigua",
+      "selectionType": "multiple",
+      "maxSelections": 3,
+      "options": [
+        {
+          "id": "legacy-burger-varios",
+          "name": "Extra varios",
+          "price": 0.7
+        },
+        {
+          "id": "legacy-burger-goat-cheese",
+          "name": "Extra queso rulo",
+          "price": 2.8
+        },
+        {
+          "id": "legacy-burger-meat",
+          "name": "Extra carne",
+          "price": 3.2
+        }
+      ]
+    },
+    {
+      "id": "combined-plate-choice",
+      "name": "Principal",
+      "description": "Elige el plato combinado",
+      "selectionType": "single",
+      "required": true,
+      "options": [
+        {
+          "id": "combined-lomo",
+          "name": "Cinta de lomo",
+          "default": true
+        },
+        {
+          "id": "combined-pollo",
+          "name": "Pollo a la plancha"
+        },
+        {
+          "id": "combined-bacon",
+          "name": "Bacon"
+        },
+        {
+          "id": "combined-panceta",
+          "name": "Panceta"
+        }
+      ]
+    },
+    {
+      "id": "menu-protein",
+      "name": "Version",
+      "description": "Pollo, mixto, ternera o falafel",
+      "selectionType": "single",
+      "required": true,
+      "options": [
+        {
+          "id": "menu-pollo",
+          "name": "Pollo",
+          "default": true
+        },
+        {
+          "id": "menu-ternera",
+          "name": "Ternera",
+          "price": 1.5
+        },
+        {
+          "id": "menu-mixto",
+          "name": "Mixto",
+          "price": 0.5
+        },
+        {
+          "id": "menu-falafel",
+          "name": "Falafel",
+          "price": -1
+        }
+      ]
+    },
+    {
+      "id": "drink",
+      "name": "Bebida",
+      "description": "Incluida en el menu",
+      "selectionType": "single",
+      "required": true,
+      "options": [
+        {
+          "id": "cola",
+          "name": "Coca-Cola",
+          "default": true
+        },
+        {
+          "id": "cola-zero",
+          "name": "Coca-Cola Zero"
+        },
+        {
+          "id": "fanta",
+          "name": "Fanta Naranja"
+        },
+        {
+          "id": "sprite",
+          "name": "Sprite"
+        },
+        {
+          "id": "agua",
+          "name": "Agua mineral"
+        },
+        {
+          "id": "ayran",
+          "name": "Ayran",
+          "price": 0.5
+        }
+      ]
+    },
+    {
+      "id": "menu-combi-simple-protein",
+      "name": "Version",
+      "description": "Pollo, mixto, ternera o falafel",
+      "selectionType": "single",
+      "required": true,
+      "options": [
+        {
+          "id": "menu-combi-simple-pollo",
+          "name": "Pollo",
+          "default": true
+        },
+        {
+          "id": "menu-combi-simple-ternera",
+          "name": "Ternera",
+          "price": 2
+        },
+        {
+          "id": "menu-combi-simple-mixto",
+          "name": "Mixto",
+          "price": 0.5
+        },
+        {
+          "id": "menu-combi-simple-falafel",
+          "name": "Falafel",
+          "price": -1.3
+        }
+      ]
+    },
+    {
+      "id": "menu-combi-double-protein",
+      "name": "Version",
+      "description": "Pollo, mixto, ternera o falafel",
+      "selectionType": "single",
+      "required": true,
+      "options": [
+        {
+          "id": "menu-combi-double-pollo",
+          "name": "Pollo",
+          "default": true
+        },
+        {
+          "id": "menu-combi-double-ternera",
+          "name": "Ternera",
+          "price": 2
+        },
+        {
+          "id": "menu-combi-double-mixto",
+          "name": "Mixto",
+          "price": 0.5
+        },
+        {
+          "id": "menu-combi-double-falafel",
+          "name": "Falafel",
+          "price": -2
+        }
+      ]
+    },
+    {
+      "id": "menu-dejavu-protein",
+      "name": "Version",
+      "description": "Pollo, mixto, ternera o falafel",
+      "selectionType": "single",
+      "required": true,
+      "options": [
+        {
+          "id": "menu-dejavu-pollo",
+          "name": "Pollo",
+          "default": true
+        },
+        {
+          "id": "menu-dejavu-ternera",
+          "name": "Ternera",
+          "price": 2
+        },
+        {
+          "id": "menu-dejavu-mixto",
+          "name": "Mixto",
+          "price": 0.5
+        },
+        {
+          "id": "menu-dejavu-falafel",
+          "name": "Falafel",
+          "price": -2
+        }
+      ]
+    }
+  ]
+}

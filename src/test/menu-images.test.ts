@@ -21,10 +21,10 @@ describe("menu images", () => {
   });
 
   it("uses no-fries photos on normal kebab and shawarma, and keeps fries photos for menus", () => {
-    expect(getProduct("turkish-specialties-kebab").image).toContain("kebab-normal.png");
-    expect(getProduct("turkish-specialties-shawarma").image).toContain("shawarma-normal.png");
-    expect(getProduct("menus-menu-kebab").image).toContain("kebab.jpg");
-    expect(getProduct("menus-menu-shawarma").image).toContain("shawarma.jpg");
+    expect(getProduct("turkish-specialties-kebab").image).toContain("kebab-normal.webp");
+    expect(getProduct("turkish-specialties-shawarma").image).toContain("shawarma-normal.webp");
+    expect(getProduct("menus-menu-kebab").image).toContain("kebab.webp");
+    expect(getProduct("menus-menu-shawarma").image).toContain("shawarma.webp");
     expect(getProduct("turkish-specialties-kebab").image).not.toBe(getProduct("menus-menu-kebab").image);
     expect(getProduct("turkish-specialties-shawarma").image).not.toBe(getProduct("menus-menu-shawarma").image);
   });
@@ -37,17 +37,17 @@ describe("menu images", () => {
   });
 
   it("uses the new combi photo on generic combi products", () => {
-    expect(getProduct("plates-combi-simple").image).toContain("combi.png");
-    expect(getProduct("plates-combi-doble").image).toContain("combi.png");
-    expect(getProduct("menus-menu-combi-simple").image).toContain("combi.png");
-    expect(getProduct("menus-menu-combi-doble").image).toContain("combi.png");
+    expect(getProduct("plates-combi-simple").image).toContain("combi.webp");
+    expect(getProduct("plates-combi-doble").image).toContain("combi.webp");
+    expect(getProduct("menus-menu-combi-simple").image).toContain("combi.webp");
+    expect(getProduct("menus-menu-combi-doble").image).toContain("combi.webp");
   });
 
   it("uses the falafel plate photo on combi falafel products", () => {
-    expect(getProduct("plates-combi-simple-falafel").image).toContain("falafel.jpg");
-    expect(getProduct("plates-combi-doble-falafel").image).toContain("falafel.jpg");
-    expect(getProduct("menus-menu-combi-simple-falafel").image).toContain("falafel.jpg");
-    expect(getProduct("menus-menu-combi-doble-falafel").image).toContain("falafel.jpg");
+    expect(getProduct("plates-combi-simple-falafel").image).toContain("falafel.webp");
+    expect(getProduct("plates-combi-doble-falafel").image).toContain("falafel.webp");
+    expect(getProduct("menus-menu-combi-simple-falafel").image).toContain("falafel.webp");
+    expect(getProduct("menus-menu-combi-doble-falafel").image).toContain("falafel.webp");
   });
 
   it("uses the patatas mixtas photo on the new ration", () => {
@@ -71,7 +71,7 @@ describe("menu images", () => {
     ];
 
     for (const smoothieId of smoothieIds) {
-      expect(getProduct(`smoothies-${smoothieId}`).image).toContain(`smoothie-${smoothieId}.png`);
+      expect(getProduct(`smoothies-${smoothieId}`).image).toContain(`smoothie-${smoothieId}.webp`);
     }
   });
 });

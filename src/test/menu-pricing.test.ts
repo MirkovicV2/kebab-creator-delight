@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { menuCatalog, menuProducts } from "@/features/menu/data";
+import { getMenuProducts, menuProducts } from "@/features/menu/data";
 import { calculateSelectionPrice, getDefaultSelections } from "@/features/menu/lib/menu";
 
 function getProduct(productId: string) {
@@ -53,11 +53,11 @@ describe("menu pricing", () => {
   });
 
   it("sets every Zumit smoothie at 5,90", () => {
-    const smoothieCategory = menuCatalog.find((category) => category.id === "smoothies");
+    const smoothieProducts = getMenuProducts("smoothies");
 
-    expect(smoothieCategory?.products).toHaveLength(12);
+    expect(smoothieProducts).toHaveLength(12);
 
-    for (const product of smoothieCategory!.products) {
+    for (const product of smoothieProducts) {
       expect(product.price, product.id).toBeCloseTo(5.9, 2);
     }
   });
@@ -67,20 +67,19 @@ describe("menu pricing", () => {
   });
 
   it("also shows every Zumit smoothie in desserts at 5,90", () => {
-    const dessertsCategory = menuCatalog.find((category) => category.id === "desserts");
-    const dessertSmoothies = dessertsCategory?.products.filter((product) => product.id.startsWith("desserts-") && product.imageKey?.startsWith("smoothie-"));
+    const dessertSmoothies = getMenuProducts("desserts").filter((product) => product.image?.includes("/smoothie-"));
 
     expect(dessertSmoothies).toHaveLength(12);
 
-    for (const product of dessertSmoothies!) {
+    for (const product of dessertSmoothies) {
       expect(product.price, product.id).toBeCloseTo(5.9, 2);
     }
   });
 
   it("shows fries as standalone portions and removes them from kebab extras", () => {
-    const rationsCategory = menuCatalog.find((category) => category.id === "rations");
+    const rations = getMenuProducts("rations");
 
-    expect(rationsCategory?.products.slice(0, 3).map((product) => product.id)).toEqual([
+    expect(rations.slice(0, 3).map((product) => product.id)).toEqual([
       "rations-patatas-mixtas-bravas-o-alioli",
       "rations-racion-de-patatas-fritas",
       "rations-media-racion-de-patatas-fritas",

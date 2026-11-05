@@ -6,29 +6,44 @@ import Footer from "@/features/layout/components/Footer";
 import MenuProductCard from "@/features/menu/components/MenuProductCard";
 import Navbar from "@/features/layout/components/Navbar";
 import { Button } from "@/shared/ui/button";
-import { menuCategories, menuImageMap, menuProducts } from "@/features/menu/data";
+import { getMenuProduct, getMenuProducts, menuCategories, menuImageMap } from "@/features/menu/data";
 import { cn } from "@/shared/lib/utils";
 
 const promotedCategoryId = "smoothies";
+const orderedMenuCategories = [
+  ...menuCategories.filter((category) => category.id === promotedCategoryId),
+  ...menuCategories.filter((category) => category.id !== promotedCategoryId),
+];
+const categoryCounts = Object.fromEntries(menuCategories.map(({ id }) => [id, getMenuProducts(id).length]));
+
+const breadNotice = {
+  label: "Pan artesano",
+  description: "Trabajamos con masa madre y sin conservantes.",
+  tone: "highlight" as const,
+};
+const categoryNotices: Record<string, { id: string; label: string; title: string; description: string; tone: "alert" | "highlight" }[]> = {
+  menus: [
+    {
+      id: "menus-service", label: "Aviso de servicio", tone: "alert",
+      title: "Menus disponibles para recoger y a domicilio.",
+      description: "En local, solo se sirven en horario de comida.",
+    },
+    { ...breadNotice, id: "menus-bread", title: "Los menus de kebab y hamburguesa llevan pan artesano." },
+  ],
+  "turkish-specialties": [{ ...breadNotice, id: "turkish-bread", title: "Nuestros kebabs van con pan artesano." }],
+  hamburgers: [{ ...breadNotice, id: "burger-bread", title: "Todas las hamburguesas van con pan artesano." }],
+};
 
 const MenuPage = () => {
   const [searchParams] = useSearchParams();
   const requestedProductId = searchParams.get("producto") ?? "";
-  const requestedProduct = menuProducts.find((product) => product.id === requestedProductId);
-  const orderedMenuCategories = [
-    ...menuCategories.filter((category) => category.id === promotedCategoryId),
-    ...menuCategories.filter((category) => category.id !== promotedCategoryId),
-  ];
+  const requestedProduct = getMenuProduct(requestedProductId);
   const defaultCategoryId = orderedMenuCategories[0]?.id ?? menuCategories[0]?.id ?? "";
   const [activeCategoryId, setActiveCategoryId] = useState(requestedProduct?.categoryId ?? defaultCategoryId);
 
   const activeCategory = menuCategories.find((category) => category.id === activeCategoryId) ?? orderedMenuCategories[0] ?? menuCategories[0];
-  const activeProducts = menuProducts.filter((product) => product.categoryId === activeCategory?.id);
+  const activeProducts = getMenuProducts(activeCategory?.id);
   const smoothiesHeaderImage = menuImageMap["smoothies-header"];
-  const categoryCounts = menuProducts.reduce<Record<string, number>>((accumulator, product) => {
-    accumulator[product.categoryId] = (accumulator[product.categoryId] ?? 0) + 1;
-    return accumulator;
-  }, {});
   const highlightedProductId =
     requestedProduct && requestedProduct.categoryId === activeCategory?.id ? requestedProduct.id : undefined;
 
@@ -59,54 +74,7 @@ const MenuPage = () => {
     });
   }, [highlightedProductId]);
 
-  const activeCategoryNotices = [
-    activeCategory?.id === "menus"
-      ? {
-          id: "menus-service",
-          label: "Aviso de servicio",
-          title: "Menus disponibles para recoger y a domicilio.",
-          description: "En local, solo se sirven en horario de comida.",
-          tone: "alert" as const,
-        }
-      : null,
-    activeCategory?.id === "turkish-specialties"
-      ? {
-          id: "turkish-bread",
-          label: "Pan artesano",
-          title: "Nuestros kebabs van con pan artesano.",
-          description: "Trabajamos con masa madre y sin conservantes.",
-          tone: "highlight" as const,
-        }
-      : null,
-    activeCategory?.id === "hamburgers"
-      ? {
-          id: "burger-bread",
-          label: "Pan artesano",
-          title: "Todas las hamburguesas van con pan artesano.",
-          description: "Trabajamos con masa madre y sin conservantes.",
-          tone: "highlight" as const,
-        }
-      : null,
-    activeCategory?.id === "menus"
-      ? {
-          id: "menus-bread",
-          label: "Pan artesano",
-          title: "Los menus de kebab y hamburguesa llevan pan artesano.",
-          description: "Trabajamos con masa madre y sin conservantes.",
-          tone: "highlight" as const,
-        }
-      : null,
-  ].filter(
-    (
-      notice,
-    ): notice is {
-      id: string;
-      label: string;
-      title: string;
-      description: string;
-      tone: "alert" | "highlight";
-    } => Boolean(notice),
-  );
+  const activeCategoryNotices = categoryNotices[activeCategory?.id] ?? [];
 
   return (
     <div className="min-h-screen">

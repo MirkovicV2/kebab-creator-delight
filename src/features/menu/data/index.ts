@@ -1,34 +1,10 @@
-export type {
-  AllergenDefinition,
-  AllergenId,
-  AllergenLevel,
-  CategoryTone,
-  ExperienceHighlight,
-  MenuAllergen,
-  MenuCatalogCategory,
-  MenuCategory,
-  MenuImageKey,
-  MenuModifierGroup,
-  MenuOption,
-  MenuProduct,
-  MenuProductSeed,
-  ModifierSelectionType,
-  OrderMode,
-  OrderModeId,
-  OrderingStep,
-  RestaurantInfo,
-  Testimonial,
-} from "./types";
+import allergens from "./allergens.json";
+import type { AllergenDefinition } from "./types";
 
-export { allergenDefinitions, allergenDisclaimer, menuImageMap } from "./shared";
+export type * from "./types";
+export { default as restaurantInfo } from "./restaurant.json";
+export { menuImageMap } from "./images";
+export { getMenuProduct, getMenuProducts, menuCategories, menuDatabase, menuProducts } from "./database";
 
-export {
-  experienceHighlights,
-  menuCatalog,
-  menuCategories,
-  menuProducts,
-  orderModes,
-  orderingSteps,
-  restaurantInfo,
-  testimonials,
-} from "./mock";
+export const allergenDefinitions = allergens.definitions as AllergenDefinition[];
+export const allergenDisclaimer = allergens.disclaimer;

@@ -1,77 +1,8 @@
-export type OrderModeId = "pickup" | "delivery" | "dinein";
-export type ModifierSelectionType = "single" | "multiple";
-export type CategoryTone = "gold" | "ember" | "olive" | "sand" | "copper" | "stone";
+import type { menuImageMap } from "./images";
+
+export type MenuImageKey = keyof typeof menuImageMap;
 export type AllergenId = "gluten" | "milk" | "egg" | "fish" | "sesame" | "soy" | "nuts" | "celery" | "mustard";
 export type AllergenLevel = "contains" | "may-contain";
-export type MenuImageKey =
-  | "hero"
-  | "kebab"
-  | "menu-kebab"
-  | "doner"
-  | "shawarma"
-  | "menu-shawarma"
-  | "combi"
-  | "lahmacun"
-  | "falafel"
-  | "adana"
-  | "terrace"
-  | "salad"
-  | "salad-cesar"
-  | "salad-rulo"
-  | "salad-ventresca"
-  | "salad-crispy-chicken"
-  | "plate-deja-vu"
-  | "combined-plate"
-  | "wings"
-  | "croquetas"
-  | "fingers"
-  | "oreja"
-  | "patatas-bravas"
-  | "patatas-locas"
-  | "salchipapas"
-  | "nuggets"
-  | "huevos-rotos"
-  | "burger"
-  | "burger-simple"
-  | "burger-deja-vu-simple"
-  | "burger-deja-vu-deluxe"
-  | "burger-dracula"
-  | "burger-rulo"
-  | "bocadillo"
-  | "sandwich"
-  | "rations"
-  | "dessert"
-  | "dessert-profiteroles"
-  | "dessert-cheesecake"
-  | "smoothies-header"
-  | "smoothie-tropical-heaven"
-  | "smoothie-caribbean-passion"
-  | "smoothie-berries-paradise"
-  | "smoothie-colada-jungle"
-  | "smoothie-vitality"
-  | "smoothie-red-bliss"
-  | "smoothie-green-power"
-  | "smoothie-sunny-splash"
-  | "smoothie-dragon-fruit-mix"
-  | "smoothie-squeeze-nature"
-  | "smoothie-delightful"
-  | "smoothie-blue-lightning"
-  | "drinks"
-  | "generic";
-
-export interface RestaurantInfo {
-  name: string;
-  phone: string;
-  whatsappNumber: string;
-  address: string;
-  city: string;
-  mapsQuery: string;
-  website: string;
-  instagramProfileUrl?: string;
-  lightwidgetEmbedUrl?: string;
-  openingHours: { day: string; time: string }[];
-  serviceAreas: string[];
-}
 
 export interface MenuOption {
   id: string;
@@ -85,7 +16,7 @@ export interface MenuModifierGroup {
   id: string;
   name: string;
   description: string;
-  selectionType: ModifierSelectionType;
+  selectionType: "single" | "multiple";
   required?: boolean;
   minSelections?: number;
   maxSelections?: number;
@@ -98,7 +29,7 @@ export interface MenuCategory {
   shortName: string;
   description: string;
   note: string;
-  tone: CategoryTone;
+  tone: "gold" | "ember" | "olive" | "sand" | "copper" | "stone";
 }
 
 export interface AllergenDefinition {
@@ -133,35 +64,17 @@ export interface MenuProduct {
   modifierGroups: MenuModifierGroup[];
 }
 
-export interface MenuProductSeed extends Omit<MenuProduct, "categoryId" | "image"> {
+export interface MenuProductDocument extends Omit<MenuProduct,
+  "categoryId" | "image" | "longDescription" | "tags" | "allergens" | "modifierGroups"
+> {
   imageKey: MenuImageKey | null;
+  longDescription?: string;
+  tags?: string[];
+  allergens?: MenuAllergen[];
+  modifierGroups?: string[];
 }
 
-export interface MenuCatalogCategory extends MenuCategory {
-  products: MenuProductSeed[];
-}
-
-export interface OrderMode {
-  id: OrderModeId;
-  name: string;
-  description: string;
-  eta: string;
-  note: string;
-}
-
-export interface ExperienceHighlight {
-  title: string;
-  description: string;
-  value: string;
-}
-
-export interface OrderingStep {
-  title: string;
-  description: string;
-}
-
-export interface Testimonial {
-  name: string;
-  quote: string;
-  detail: string;
+export interface MenuDatabaseSeed {
+  categories: (MenuCategory & { products: MenuProductDocument[] })[];
+  modifiers: MenuModifierGroup[];
 }
