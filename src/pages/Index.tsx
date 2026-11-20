@@ -9,7 +9,7 @@ import Navbar from "@/features/layout/components/Navbar";
 import { Badge } from "@/shared/ui/badge";
 import { Button } from "@/shared/ui/button";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/shared/ui/carousel";
-import { menuDatabase, restaurantInfo } from "@/features/menu/data";
+import { menuDatabase, primaryRestaurantPhone, restaurantInfo, restaurantPhones } from "@/features/menu/data";
 import { formatProductPrice } from "@/features/menu/lib/menu";
 
 const adanaImage = `${import.meta.env.BASE_URL}images/adana.webp`;
@@ -65,10 +65,10 @@ const Index = () => {
                 <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-primary-foreground/68">Pedidos</p>
                 <div className="mt-2 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
                   <a
-                    href={`tel:${restaurantInfo.phone}`}
+                    href={primaryRestaurantPhone.href}
                     className="font-display text-[1.95rem] leading-none text-primary-foreground hover:text-primary-foreground/78 sm:text-[2.15rem]"
                   >
-                    91 713 99 80
+                    {primaryRestaurantPhone.display}
                   </a>
                   <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-primary-foreground/68">
                     Local, recogida y domicilio
@@ -263,9 +263,11 @@ const Index = () => {
                 <article className="h-full bg-gold px-4 py-4 text-gold-foreground sm:px-5 sm:py-5 lg:px-4 lg:py-4">
                   <p className="editorial-kicker text-black/55">Contacto rapido</p>
                   <div className="mt-2.5 space-y-2 text-[10px] font-semibold uppercase tracking-[0.16em] text-black/76 sm:text-[11px] sm:tracking-[0.18em]">
-                    <a href={`tel:${restaurantInfo.phone}`} className="block hover:text-black">
-                      {restaurantInfo.phone}
-                    </a>
+                    {restaurantPhones.map((phone) => (
+                      <a key={phone.href} href={phone.href} className="block hover:text-black">
+                        {phone.label}: {phone.display}
+                      </a>
+                    ))}
                     <a href={mapsUrl} target="_blank" rel="noreferrer" className="block hover:text-black">
                       Ver ubicacion
                     </a>
@@ -303,10 +305,14 @@ const Index = () => {
                   </div>
 
                   <div className="grid gap-2 border-t border-black/10 pt-3 sm:grid-cols-[160px_1fr]">
-                    <p>Telefono</p>
-                    <a href={`tel:${restaurantInfo.phone}`} className="text-black hover:text-black/70">
-                      91 713 99 80
-                    </a>
+                    <p>Teléfonos</p>
+                    <div className="space-y-2">
+                      {restaurantPhones.map((phone) => (
+                        <a key={phone.href} href={phone.href} className="block text-black hover:text-black/70">
+                          {phone.label}: {phone.display}
+                        </a>
+                      ))}
+                    </div>
                   </div>
 
                   <div className="grid gap-2 border-t border-black/10 pt-3 sm:grid-cols-[160px_1fr]">
@@ -328,7 +334,7 @@ const Index = () => {
 
                 <div className="mt-8 flex flex-wrap gap-3">
                   <Button asChild className="h-12 border border-gold bg-gold px-6 text-[11px] font-semibold uppercase tracking-[0.26em] text-gold-foreground hover:bg-gold/90">
-                    <a href={`tel:${restaurantInfo.phone}`}>
+                    <a href={primaryRestaurantPhone.href}>
                       <Phone className="h-4 w-4" />
                       Llamar
                     </a>

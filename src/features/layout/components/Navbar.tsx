@@ -4,7 +4,7 @@ import { Instagram, Menu, Phone, X } from "lucide-react";
 
 import BrandLogo from "@/features/layout/components/BrandLogo";
 import CheckerDivider from "@/features/layout/components/CheckerDivider";
-import { restaurantInfo } from "@/features/menu/data";
+import { primaryRestaurantPhone, restaurantInfo } from "@/features/menu/data";
 import { cn } from "@/shared/lib/utils";
 
 const navigationItems = [
@@ -71,11 +71,11 @@ const Navbar = () => {
               ) : null}
 
               <a
-                href="tel:917139980"
+                href={primaryRestaurantPhone.href}
                 className="inline-flex items-center gap-2 border border-black px-3 py-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-black"
               >
                 <Phone className="h-3.5 w-3.5" />
-                91 713 99 80
+                {primaryRestaurantPhone.display}
               </a>
             </div>
           </div>
@@ -124,7 +124,7 @@ const Navbar = () => {
               ) : null}
 
               <a
-                href="tel:917139980"
+                href={primaryRestaurantPhone.href}
                 className="inline-flex items-center gap-2 border border-gold bg-gold px-4 py-3 text-[11px] font-semibold uppercase tracking-[0.24em] text-gold-foreground"
               >
                 <Phone className="h-3.5 w-3.5" />

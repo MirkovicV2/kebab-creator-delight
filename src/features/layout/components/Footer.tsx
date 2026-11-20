@@ -3,7 +3,7 @@ import { Instagram } from "lucide-react";
 
 import BrandLogo from "@/features/layout/components/BrandLogo";
 import CheckerDivider from "@/features/layout/components/CheckerDivider";
-import { menuProducts, restaurantInfo } from "@/features/menu/data";
+import { menuProducts, restaurantInfo, restaurantPhones } from "@/features/menu/data";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -47,9 +47,11 @@ const Footer = () => {
 
           <div className="space-y-2 text-right text-[11px] font-semibold uppercase tracking-[0.24em] text-black/72">
             <p>{restaurantInfo.city}</p>
-            <a href={`tel:${restaurantInfo.phone}`} className="block hover:text-black">
-              {restaurantInfo.phone}
-            </a>
+            {restaurantPhones.map((phone) => (
+              <a key={phone.href} href={phone.href} className="block hover:text-black">
+                {phone.label}: {phone.display}
+              </a>
+            ))}
             <p>{menuProducts.length}+ platos en carta</p>
           </div>
         </div>

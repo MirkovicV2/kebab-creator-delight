@@ -11,9 +11,19 @@ test("loads the home and contact pages with the restaurant data", async ({ page 
   await page.goto("/");
   await expect(page.getByRole("heading", { name: "Kebabs, platos, raciones y burgers." })).toBeVisible();
   await expect(page.locator("header")).toContainText(/dejavu/i);
+  await expect(page.locator("main a[href='tel:+34670896787']").first()).toHaveText("670 896 787");
+  await expect(page.locator("main a[href='tel:+34917139980']").first()).toContainText("91 713 99 80");
+  await expect(page.getByRole("link", { name: "Llamar", exact: true })).toHaveAttribute("href", "tel:+34670896787");
+  if (test.info().project.name === "mobile") {
+    await page.getByRole("button", { name: "Abrir navegacion" }).click();
+    await expect(page.getByRole("link", { name: "Llamar al local" })).toHaveAttribute("href", "tel:+34670896787");
+  }
   await page.goto("/contacto");
   await expect(page.getByRole("heading", { level: 1 })).toContainText("Ven, llama");
   await expect(page.locator("main")).toContainText("Rivas-Vaciamadrid");
+  await expect(page.locator("main a[href='tel:+34670896787']").first()).toContainText("670 896 787");
+  await expect(page.locator("main a[href='tel:+34917139980']")).toContainText("91 713 99 80");
+  await expect(page.getByRole("link", { name: "Llamar", exact: true })).toHaveAttribute("href", "tel:+34670896787");
   expect(errors).toEqual([]);
 });
 

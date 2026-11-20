@@ -4,7 +4,7 @@ import Footer from "@/features/layout/components/Footer";
 import Navbar from "@/features/layout/components/Navbar";
 import VenueGallery from "@/features/marketing/components/VenueGallery";
 import { Button } from "@/shared/ui/button";
-import { restaurantInfo } from "@/features/menu/data";
+import { primaryRestaurantPhone, restaurantInfo, restaurantPhones } from "@/features/menu/data";
 
 const ContactPage = () => {
   const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(restaurantInfo.mapsQuery)}`;
@@ -44,13 +44,15 @@ const ContactPage = () => {
 
                   <div className="grid gap-3 sm:grid-cols-[0.82fr_1.18fr]">
                     <div className="rounded-[24px] border border-black/10 bg-black/[0.03] p-4 sm:p-5">
-                      <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-black/52">Telefono</p>
-                      <a
-                        href={`tel:${restaurantInfo.phone}`}
-                        className="mt-3 block text-[13px] font-semibold uppercase tracking-[0.08em] text-black/84 hover:text-black sm:text-[14px]"
-                      >
-                        {restaurantInfo.phone}
-                      </a>
+                      <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-black/52">Teléfonos</p>
+                      <div className="mt-3 space-y-3 text-[13px] font-semibold uppercase tracking-[0.08em] text-black/84 sm:text-[14px]">
+                        {restaurantPhones.map((phone) => (
+                          <a key={phone.href} href={phone.href} className="block hover:text-black">
+                            <span className="block text-[10px] text-black/52">{phone.label}</span>
+                            {phone.display}
+                          </a>
+                        ))}
+                      </div>
                     </div>
 
                     <div className="rounded-[24px] border border-black/10 bg-black/[0.03] p-4 sm:p-5">
@@ -92,7 +94,7 @@ const ContactPage = () => {
 
                 <div className="mt-6 flex flex-wrap gap-3 sm:mt-8">
                   <Button asChild className="h-10 border border-black bg-black px-5 text-[10px] font-semibold uppercase tracking-[0.22em] text-background hover:bg-black/90 sm:h-12 sm:px-6 sm:text-[11px] sm:tracking-[0.24em]">
-                    <a href={`tel:${restaurantInfo.phone}`}>
+                    <a href={primaryRestaurantPhone.href}>
                       <Phone className="h-4 w-4" />
                       Llamar
                     </a>
