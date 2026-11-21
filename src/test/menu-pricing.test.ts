@@ -103,7 +103,7 @@ describe("menu pricing", () => {
       "rations-media-racion-de-patatas-fritas",
       "turkish-specialties-media-racion-de-patatas-fritas",
     ]) {
-      expect(getProduct(productId).price).toBeCloseTo(2.5, 2);
+      expect(getProduct(productId).price).toBeCloseTo(2.8, 2);
     }
   });
 });

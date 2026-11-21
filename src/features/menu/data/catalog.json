@@ -196,7 +196,7 @@
           "id": "turkish-specialties-media-racion-de-patatas-fritas",
           "name": "Media racion de patatas fritas",
           "description": "Media racion de patatas fritas.",
-          "price": 2.5,
+          "price": 2.8,
           "imageKey": "patatas-bravas",
           "tags": ["Media racion","Kebab turco"],
           "allergens": [
@@ -329,7 +329,7 @@
           "id": "rations-media-racion-de-patatas-fritas",
           "name": "Media racion de patatas fritas",
           "description": "Media racion de patatas fritas.",
-          "price": 2.5,
+          "price": 2.8,
           "imageKey": "patatas-bravas",
           "tags": ["Media racion","Para compartir"],
           "prepTime": "11 min",
